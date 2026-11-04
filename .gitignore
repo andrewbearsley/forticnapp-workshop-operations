@@ -1,0 +1,8 @@
+.venv/
+internal/
+__pycache__/
+.DS_Store
+*.toml
+*.key
+*.pem
+tmp/

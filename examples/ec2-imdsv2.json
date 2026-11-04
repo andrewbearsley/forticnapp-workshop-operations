@@ -1,0 +1,4 @@
+{
+  "queryId": "Workshop_IMDSv2_REPLACE_ID",
+  "queryText": "{ source { LW_CFG_AWS_EC2_INSTANCES instance } filter { instance.RESOURCE_CONFIG:MetadataOptions.HttpTokens <> 'required' } return distinct { instance.ACCOUNT_ID, instance.RESOURCE_ID as RESOURCE_KEY, instance.RESOURCE_REGION, instance.RESOURCE_TYPE, instance.SERVICE, 'IMDSv2NotEnforced' as COMPLIANCE_FAILURE_REASON } }"
+}

@@ -1,0 +1,6 @@
+Pillow>=11
+markdown-it-py>=3
+pygments>=2
+playwright>=1.50
+pypdf>=5
+PyMuPDF>=1.25

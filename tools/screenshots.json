@@ -1,0 +1,180 @@
+[
+  {
+    "tenant": "FORTIDEMO-2026-04",
+    "source": "01-dashboard.jpg",
+    "output": "lab-01/images/dashboard.png",
+    "callouts": [
+      "Dashboard"
+    ],
+    "redact": []
+  },
+  {
+    "tenant": "FORTIDEMO-2026-04",
+    "source": "02-composites.jpg",
+    "output": "lab-02/images/composites.png",
+    "callouts": [],
+    "redact": []
+  },
+  {
+    "tenant": "FORTIDEMO-2026-04",
+    "source": "03-composite-observations.jpg",
+    "output": "lab-02/images/composite-graph.png",
+    "callouts": [],
+    "redact": []
+  },
+  {
+    "tenant": "FORTIDEMO-2026-04",
+    "source": "04-observation-triage.jpg",
+    "output": "lab-02/images/observation-triage.png",
+    "callouts": [],
+    "redact": [],
+    "boxes": [
+      [
+        574,
+        385,
+        676,
+        422
+      ]
+    ]
+  },
+  {
+    "tenant": "FORTIDEMO-2026-04",
+    "source": "05-attack-work-items.jpg",
+    "output": "lab-05/images/attack-work-items.png",
+    "callouts": [],
+    "redact": []
+  },
+  {
+    "tenant": "FORTIDEMO-2026-04",
+    "source": "06-path-investigation.jpg",
+    "output": "lab-05/images/path-investigation.png",
+    "callouts": [],
+    "redact": []
+  },
+  {
+    "tenant": "FORTIDEMO-2026-04",
+    "source": "07-compliance-frameworks.jpg",
+    "output": "lab-07/images/compliance-frameworks.png",
+    "callouts": [],
+    "redact": []
+  },
+  {
+    "tenant": "FORTIDEMO-2026-04",
+    "source": "08-compliance-policy.jpg",
+    "output": "lab-07/images/compliance-policy.png",
+    "callouts": [],
+    "redact": []
+  },
+  {
+    "tenant": "FORTIDEMO-2026-04",
+    "source": "09-policy-catalog.jpg",
+    "output": "lab-08/images/policy-catalog.png",
+    "callouts": [],
+    "redact": []
+  },
+  {
+    "tenant": "FORTIDEMO-2026-04",
+    "source": "10-policy-builder.jpg",
+    "output": "lab-08/images/policy-builder.png",
+    "callouts": [],
+    "redact": []
+  },
+  {
+    "tenant": "FORTIDEMO-2026-04",
+    "source": "21-build-policy-query.jpg",
+    "output": "lab-08/images/build-policy-query.png",
+    "callouts": [],
+    "redact": []
+  },
+  {
+    "tenant": "FORTIDEMO-2026-04",
+    "source": "22-runtime-policy-query.jpg",
+    "output": "lab-08/images/runtime-policy-query.png",
+    "callouts": [],
+    "redact": []
+  },
+  {
+    "tenant": "FORTIDEMO-2026-04",
+    "source": "23-data-policies.jpg",
+    "output": "lab-08/images/data-policies.png",
+    "callouts": [],
+    "redact": []
+  },
+  {
+    "tenant": "FORTIDEMO-2026-04",
+    "source": "24-composite-policy.jpg",
+    "output": "lab-08/images/composite-policy.png",
+    "callouts": [],
+    "redact": []
+  },
+  {
+    "tenant": "FORTIDEMO-2026-04",
+    "source": "25-anomaly-query.jpg",
+    "output": "lab-08/images/anomaly-query.png",
+    "callouts": [],
+    "redact": []
+  },
+  {
+    "tenant": "FORTIDEMO-2026-04",
+    "source": "26-threat-observation.jpg",
+    "output": "lab-08/images/threat-observation.png",
+    "callouts": [],
+    "redact": []
+  },
+  {
+    "tenant": "FORTIDEMO-2026-04",
+    "source": "12-framework-catalog.jpg",
+    "output": "lab-10/images/framework-catalog.png",
+    "callouts": [],
+    "redact": []
+  },
+  {
+    "tenant": "FORTIDEMO-2026-04",
+    "source": "13-reports.jpg",
+    "output": "lab-11/images/reports.png",
+    "callouts": [],
+    "redact": []
+  },
+  {
+    "tenant": "FORTIDEMO-2026-04",
+    "source": "14-report-form.jpg",
+    "output": "lab-11/images/report-form.png",
+    "callouts": [],
+    "redact": []
+  },
+  {
+    "tenant": "FORTIDEMO-2026-04",
+    "source": "11-query-builder.jpg",
+    "output": "lab-09/images/query-builder.png",
+    "callouts": [],
+    "redact": []
+  },
+  {
+    "tenant": "FORTIDEMO-2026-04",
+    "source": "11-query-builder.jpg",
+    "output": "lab-04/images/explorer-query.png",
+    "callouts": [],
+    "redact": []
+  },
+  {
+    "tenant": "FORTIDEMO-2026-04",
+    "source": "15-cloud-activity.jpg",
+    "output": "lab-03/images/cloud-activity.png",
+    "callouts": [],
+    "redact": []
+  },
+  {
+    "tenant": "FORTIDEMO-2026-04",
+    "source": "16-vulnerabilities.jpg",
+    "output": "lab-06/images/vulnerabilities.png",
+    "callouts": [],
+    "redact": []
+  },
+  {
+    "tenant": "FORTIDEMO-2026-04",
+    "source": "17-agent-coverage.jpg",
+    "output": "lab-12/images/agent-coverage.png",
+    "callouts": [],
+    "redact": []
+  }
+]
