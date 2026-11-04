@@ -15,7 +15,7 @@ Separate AWS and Azure configurations keep each provider's benchmark and scope c
 
 ## Prerequisites
 
-Complete Labs 7 and 10. Have your assigned AWS and Azure resource groups ready.
+Complete Labs 7 and 10.
 Screenshots show demo report controls. Create reports only in the sandpit.
 
 ## Lab steps
@@ -34,6 +34,8 @@ Screenshots show demo report controls. Create reports only in the sandpit.
 These are instructions for report generation, not assessment results.
 
 ### Step 2: Configure the AWS report
+
+Use the AWS resource group assigned for this lab. Use your participant ID in the report name.
 
 1. Return to **Reports**.
 2. Click **Configure report**.
@@ -61,7 +63,7 @@ Check the saved configuration's state. Do not rely only on the creation form's s
 
 ### Step 3: Configure the Azure report
 
-Repeat Step 2 with the required Azure CIS framework.
+Repeat Step 2 with the required Azure CIS framework. Use the assigned Azure resource group.
 Use `Workshop-YOURID-Azure-CIS` as the name.
 Select the approved Azure subscription scope. Keep delivery disabled.
 

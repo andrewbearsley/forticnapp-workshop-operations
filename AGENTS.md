@@ -22,4 +22,6 @@ Add an observable checkpoint after each important step.
 State what evidence students must find to check an answer.
 Use brief hints for practical help. Use What matters callouts for key lessons.
 Teach command setup before the first command that needs it.
+Introduce credentials, tools, participant IDs, and worksheets at their first use in a lab.
+Keep setup checklists out of the workshop overview.
 Rebuild the offline PDF after lab changes. Verify its rendered pages.

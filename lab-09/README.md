@@ -15,9 +15,7 @@ A disabled policy lets you review the configuration before activation.
 
 ## Prerequisites
 
-Complete Lab 8. Use a unique participant ID.
-Install `lacework` and `jq` using the [CLI reference](https://docs.fortinet.com/document/forticnapp/latest/cli-reference).
-Clone this repository or download its files. Use the API key supplied for your sandpit account.
+Complete Lab 8.
 Screenshots show demo forms. Save objects only in the sandpit.
 
 ## Lab steps
@@ -42,6 +40,11 @@ If the result is empty, inspect data coverage before concluding that no exposure
 
 ### Step 2: Save the query
 
+Choose a unique participant ID, such as `ab04`.
+Replace `YOURID` in workshop names with this ID. For example: `Workshop-ab04-exposed-hosts`.
+Record each saved object's name and ID under **Created objects** in [your worksheet](../evidence-worksheet.md).
+Use the same participant ID in later labs.
+
 1. Click **Save as Query/Insight**.
 2. Set the name to `Workshop-YOURID-exposed-hosts`.
 3. Record the generated **Query ID**.
@@ -54,7 +57,11 @@ Saving a query does not by itself enable a detection policy.
 
 ### Step 3: Prepare the sandpit CLI profile
 
-Run these commands from the repository root:
+Install `lacework` and `jq` using the [CLI reference](https://docs.fortinet.com/document/forticnapp/latest/cli-reference).
+Download this repository's files to your computer. Open a terminal in the repository folder.
+Use the API key supplied for your sandpit account.
+
+Run these commands:
 
 ```bash
 lacework version

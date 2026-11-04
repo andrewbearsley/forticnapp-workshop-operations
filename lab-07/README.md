@@ -15,11 +15,13 @@ Review failures and assessment gaps together to understand what the result cover
 
 ## Prerequisites
 
-Complete Lab 1. Have your assigned AWS and Azure scopes ready.
+Complete Lab 1.
 
 ## Lab steps
 
 ### Step 1: Read a framework result
+
+Use the AWS and Azure scopes assigned for this lab.
 
 1. Open **Risk Center > Findings > Compliance > Cloud**.
 2. Select **Frameworks**.

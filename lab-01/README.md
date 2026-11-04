@@ -16,11 +16,13 @@ Check the tenant, scope, and collection time to interpret each result.
 
 ## Prerequisites
 
-Use your approved console account. Open [the console](https://partner-demo.lacework.net/).
+Use the console account supplied for the workshop.
 
 ## Lab steps
 
 ### Step 1: Confirm the tenant
+
+Sign in to [the console](https://partner-demo.lacework.net/) with your workshop account.
 
 1. Read the tenant name at the bottom of the navigation.
 2. Open the tenant selector if another tenant is active.
@@ -30,6 +32,8 @@ Use your approved console account. Open [the console](https://partner-demo.lacew
 **Checkpoint:** The tenant selector reads `FORTIDEMO-2026-04`.
 
 ### Step 2: Read the overview
+
+Keep your answers in a private copy of [the evidence worksheet](../evidence-worksheet.md).
 
 1. Find **Threat alert overview**.
 2. Find **Non-compliant resources**.

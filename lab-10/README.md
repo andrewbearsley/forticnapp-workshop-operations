@@ -14,7 +14,7 @@ If you change a CIS framework's policy selection, the result is a custom control
 
 ## Prerequisites
 
-Complete Lab 7. Use your participant ID.
+Complete Lab 7.
 Use the AWS CIS framework that you examined in Lab 7.
 Screenshots show the demo tenant. Save only in the sandpit.
 
@@ -56,6 +56,9 @@ flowchart TB
 Compliance reporting workflow.
 
 ### Step 2: Create a custom framework
+
+Use your participant ID from Lab 9. If you skipped that lab, choose a unique ID such as `ab04`.
+Replace `YOURID` in the name below. Record the saved framework's ID in your worksheet.
 
 1. Return to the catalog.
 2. Click **Add Framework**.

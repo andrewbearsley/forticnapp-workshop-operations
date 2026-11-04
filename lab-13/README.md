@@ -15,9 +15,8 @@ Explicit scope helps you retrieve evidence from the intended environment.
 
 ## Prerequisites
 
-Install `lacework` and `jq` using the [CLI reference](https://docs.fortinet.com/document/forticnapp/latest/cli-reference).
-Keep the sandpit profile from Lab 9. Use the API key supplied for your read-only demo account.
-Clone this repository or download its files. Run commands from the repository root.
+Complete the CLI setup in Lab 9 Step 3.
+Run commands from the repository root.
 
 ## Lab steps
 
@@ -34,6 +33,7 @@ The examples use bash or zsh. Use an approved equivalent shell for other systems
 ### Step 2: Add the demo profile
 
 Keep the sandpit profile from Lab 9. Add a separate demo profile.
+Use the API key supplied for your read-only demo account.
 Replace the key file path below with your private path.
 
 ```bash

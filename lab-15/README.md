@@ -15,9 +15,7 @@ It is separate from the workload agent and console AI Assist.
 
 ## Prerequisites
 
-Complete Labs 2, 13, and 14. Use an approved AI coding agent.
-Confirm that your organisation permits the selected tenant data in that agent runtime.
-Keep the CLI profiles from Lab 13.
+Complete Labs 2, 13, and 14. Keep the CLI profiles from Lab 13.
 
 ## Lab steps
 
@@ -32,6 +30,10 @@ Keep the CLI profiles from Lab 13.
 **Checkpoint:** Explain which component collects process telemetry and which component runs CLI/API investigations.
 
 ### Step 2: Install or inspect the skill
+
+Install an approved AI coding agent if needed.
+Confirm that your organisation permits the selected tenant data in that runtime.
+Install Git if needed for the clone command below.
 
 Use [the skill repository](https://github.com/andrewbearsley/forticnapp-lacework-skill) for current runtime setup.
 For Codex, the repository documents this installation target:

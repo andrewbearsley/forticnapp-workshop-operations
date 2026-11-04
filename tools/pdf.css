@@ -88,6 +88,7 @@ img {
 code, pre { font-family: Menlo, Consolas, "Liberation Mono", monospace; font-size: 8.5pt; }
 code { background: var(--code-bg); border-radius: 4px; padding: 0.1em 0.35em; }
 pre {
+  break-inside: avoid;
   background: var(--code-bg);
   border-radius: 6px;
   padding: 3mm 3.5mm;
