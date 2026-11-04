@@ -7,6 +7,12 @@
 Find the resources behind a finding. Use relationships to explain exposure.
 Compare cloud inventory with workload telemetry.
 
+## Concepts
+
+Explorer connects resources through their relationships. Inventory shows resource properties and collected workload data.
+Use these views to connect an alert to its affected resource and examine its exposure.
+Cloud inventory alone does not confirm workload agent coverage.
+
 ## Prerequisites
 
 Complete Lab 2. Keep one affected entity in your worksheet.

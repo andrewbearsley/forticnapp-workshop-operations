@@ -6,6 +6,12 @@
 
 Present an evidence-based investigation. Confirm report scope and remove your workshop objects.
 
+## Concepts
+
+An investigation needs conclusions that others can trace to evidence.
+Keep detected activity, possible exposure, and compliance results distinct when you present your findings.
+Remove your saved lab objects to leave the shared sandpit ready for the next exercise.
+
 ## Prerequisites
 
 Keep your evidence worksheet and the IDs of every object that you created.

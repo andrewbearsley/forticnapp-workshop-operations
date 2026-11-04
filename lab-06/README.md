@@ -7,6 +7,12 @@
 Use identity and vulnerability context to improve a remediation decision.
 Compare a package finding with the exposure of its affected resource.
 
+## Concepts
+
+Exposure, identity permissions, and available fixes affect remediation priority.
+A vulnerability on a reachable host can need a different response from the same vulnerability elsewhere.
+Use this context to choose what to fix and which owner to involve.
+
 ## Prerequisites
 
 Complete Lab 5. Keep one attack path resource in your worksheet.

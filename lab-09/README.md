@@ -7,6 +7,12 @@
 Test the condition before you save a policy. Compare the QBL and LQL authoring paths.
 Create an isolated policy that does not change existing detections.
 
+## Concepts
+
+A query selects data that matches a condition. A policy uses that query to define an assessment or detection.
+Test the query first to check its scope and results.
+A disabled policy lets you review the configuration before activation.
+
 ## Prerequisites
 
 Complete Lab 8. Use a unique participant ID.

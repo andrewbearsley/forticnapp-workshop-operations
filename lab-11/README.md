@@ -7,6 +7,12 @@
 Configure separate CIS reports for AWS and Azure.
 Select the correct framework version, data scope, assessment statuses, and delivery settings.
 
+## Concepts
+
+A report configuration selects the framework, resource scope, assessment statuses, and delivery settings.
+The generated report contains the assessment evidence for those selections.
+Separate AWS and Azure configurations keep each provider's benchmark and scope clear.
+
 ## Prerequisites
 
 Complete Labs 7 and 10. Have your assigned AWS and Azure resource groups ready.

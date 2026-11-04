@@ -7,6 +7,12 @@
 Find every category in Policy Manager. Identify which controls apply to each category.
 Prepare a tuning decision before making a change.
 
+## Concepts
+
+Policy categories evaluate different evidence and expose different tuning controls.
+A compliance query tests resource configuration. A composite policy combines observations for investigation.
+Review the category and available controls before choosing a change.
+
 ## Prerequisites
 
 Complete Labs 2 and 7. Use your participant ID for any new object.

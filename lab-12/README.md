@@ -7,6 +7,12 @@
 Check the evidence pipeline before trusting a result.
 Distinguish a detection policy, an alert route, and a report delivery configuration.
 
+## Concepts
+
+Security findings depend on collected data. Missing or stale collection can leave gaps in an investigation.
+Alert routing sends notifications to a team. Report delivery distributes assessment results.
+Check collection and delivery separately to find operational gaps.
+
 ## Prerequisites
 
 Complete Lab 11. Do not change shared integrations or channels.

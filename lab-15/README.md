@@ -7,6 +7,12 @@
 Use the agent skill to repeat a known investigation. Validate its answer against the underlying evidence.
 Keep the external agent skill distinct from FortiCNAPP AI Assist and the workload agent.
 
+## Concepts
+
+The FortiCNAPP agent skill gives an external coding agent instructions for CLI and API investigations.
+It can reduce manual evidence collection. You still need to check its sources, scope, and conclusions.
+It is separate from the workload agent and console AI Assist.
+
 ## Prerequisites
 
 Complete Labs 2, 13, and 14. Use an approved AI coding agent.

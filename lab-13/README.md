@@ -7,6 +7,12 @@
 Retrieve the same evidence through the CLI. Use explicit scope and small JSON summaries.
 Keep credentials and unrelated tenant details out of shared output.
 
+## Concepts
+
+The CLI retrieves FortiCNAPP data through commands that you can repeat or script.
+A profile stores connection settings and credentials. Account and subaccount flags select the tenant scope.
+Explicit scope helps you retrieve evidence from the intended environment.
+
 ## Prerequisites
 
 Install `lacework` and `jq` using the [CLI reference](https://docs.fortinet.com/document/forticnapp/latest/cli-reference).

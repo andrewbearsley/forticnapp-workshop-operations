@@ -7,6 +7,12 @@
 Start with the highest-value alert type: a composite alert.
 Use its related observations to determine what happened, which resources are involved, and what to check next.
 
+## Concepts
+
+A composite alert combines related observations to help you investigate an incident.
+An observation can describe suspicious activity or security context, such as a vulnerable application.
+Use the combined evidence to identify affected entities and decide what to check next.
+
 ## Prerequisites
 
 Complete Lab 1. Use a recent **Potentially Compromised Host** composite alert.
@@ -44,9 +50,6 @@ Results can include Medium alerts. Do not limit this investigation to Critical a
 
 ### Step 3: Understand what is combined
 
-A composite alert relates observations that warrant investigation together.
-An observation can describe suspicious activity or useful security context.
-For example, a vulnerable application is context. A possible reverse shell describes detected activity.
 Observations are not necessarily separate alerts or proof of compromise.
 **Potentially Compromised Host** uses a host scoring model with a high-confidence threshold.
 

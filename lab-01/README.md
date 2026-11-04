@@ -7,6 +7,13 @@
 Find the main work areas. Confirm the tenant before you inspect data.
 Explain which evidence comes from configuration collection, activity logs, and workload telemetry.
 
+## Concepts
+
+The console shows different types of evidence about the same resources.
+Configuration collection supports compliance checks. Activity logs record cloud actions.
+Workload telemetry shows processes and connections.
+Check the tenant, scope, and collection time to interpret each result.
+
 ## Prerequisites
 
 Use your approved console account. Open [the console](https://partner-demo.lacework.net/).

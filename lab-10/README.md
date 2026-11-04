@@ -6,6 +6,12 @@
 
 Group policies for a specific reporting purpose. Keep a custom framework distinct from the original CIS benchmark.
 
+## Concepts
+
+A framework groups compliance policies into sections for assessment and reporting.
+A custom framework lets you select controls for a specific review.
+If you change a CIS framework's policy selection, the result is a custom control set.
+
 ## Prerequisites
 
 Complete Lab 7. Use your participant ID.

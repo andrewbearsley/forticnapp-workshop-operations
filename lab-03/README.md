@@ -7,6 +7,12 @@
 Use individual alerts and cloud activity to support an investigation.
 Separate a detected event from your explanation of its cause.
 
+## Concepts
+
+Individual alerts and cloud activity records help you test an incident hypothesis.
+An anomaly is a detected deviation. Its cause can be legitimate or malicious.
+A cloud activity record supplies evidence about an action, its actor, and its outcome.
+
 ## Prerequisites
 
 Complete Lab 2. Keep the composite alert's activity window in your worksheet.
@@ -32,8 +38,6 @@ Complete Lab 2. Keep the composite alert's activity window in your worksheet.
 4. List the operational context needed to explain it.
 
 **Checkpoint:** Give one legitimate explanation and one security explanation that need investigation.
-
-An anomaly is a detected deviation. Investigate its cause before concluding that it is malicious.
 
 ### Step 3: Examine cloud activity
 

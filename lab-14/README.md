@@ -7,6 +7,12 @@
 Understand a REST request and its response. Retrieve the alert behind a console investigation.
 Check time filters, response shape, and pagination before reporting counts.
 
+## Concepts
+
+An API request specifies a method, endpoint, and parameters.
+The response contains data or an error. Filters and pagination determine how much data you receive.
+Check these details before using a response as evidence or calculating totals.
+
 ## Prerequisites
 
 Complete Lab 13. Keep an alert ID from your composite investigation.
@@ -37,7 +43,7 @@ flowchart TB
     style response fill:#F6F8FA,stroke:#D1D9E0,color:#10243B
 ```
 
-The `lacework api` command calls the REST API. The CLI manages authentication for the selected profile.
+The `lacework api` command manages authentication for the selected profile.
 
 ### Step 2: Compare a CLI list with an API response
 

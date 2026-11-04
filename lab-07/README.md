@@ -7,6 +7,12 @@
 Read a CIS assessment with the correct provider, version, scope, and collection time.
 Trace a failed policy to its affected resources.
 
+## Concepts
+
+A CIS benchmark groups security controls for a specific cloud provider and version.
+FortiCNAPP assesses supported controls against collected resource data.
+Review failures and assessment gaps together to understand what the result covers.
+
 ## Prerequisites
 
 Complete Lab 1. Have your assigned AWS and Azure scopes ready.

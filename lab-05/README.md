@@ -7,6 +7,12 @@
 Identify conditions that permit exposure. Select a practical way to interrupt an attack path.
 Keep exposure analysis separate from evidence of exploitation.
 
+## Concepts
+
+An attack path connects exposure conditions that could let an attacker reach a target.
+It shows a possible route, not proof of exploitation.
+Find a relationship that you can change to interrupt the route.
+
 ## Prerequisites
 
 Complete Lab 4. Keep the affected resource from your composite investigation.
@@ -57,7 +63,7 @@ flowchart LR
     class I,E,H,P,D node
 ```
 
-Example exposure path. The path shows what could happen, not evidence that it happened.
+Example exposure path.
 
 ### Step 4: Propose a path interruption
 
