@@ -1,16 +1,18 @@
-# Lab 10: Build a custom compliance framework
+# Lab 10: Build a compliance framework for your review
 
 **Environment:** FORTINETAPACDEMO. **Access:** Read/write.
 
-## Objectives
-
-Group policies for a specific reporting purpose. Keep a custom framework distinct from the original CIS benchmark.
-
 ## Concepts
 
+A specific review can need a different selection of controls from a complete benchmark.
 A framework groups compliance policies into sections for assessment and reporting.
-A custom framework lets you select controls for a specific review.
-If you change a CIS framework's policy selection, the result is a custom control set.
+A custom framework lets you choose that selection.
+If you change a CIS framework, present the result as a custom control set.
+
+## Objectives
+
+- Create a custom framework with a policy selection that matches your review purpose.
+- Verify the saved selection and recognise results that still await evaluation.
 
 ## Prerequisites
 
@@ -94,4 +96,4 @@ Continue with the existing assessment while the changes are evaluated.
 Keep this framework for cleanup. Lab 11 uses the built-in CIS frameworks for its main reports.
 
 ---
-Next: [Lab 11: Configure AWS and Azure CIS reports](../lab-11/README.md).
+Next: [Lab 11: Build AWS and Azure CIS reports your team can use](../lab-11/README.md).

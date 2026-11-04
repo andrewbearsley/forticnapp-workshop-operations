@@ -1,17 +1,18 @@
-# Lab 5: Investigate risk and attack paths
+# Lab 5: Where could an attacker go next?
 
 **Environment:** FORTIDEMO-2026-04. **Access:** Read-only.
 
-## Objectives
-
-Identify conditions that permit exposure. Select a practical way to interrupt an attack path.
-Keep exposure analysis separate from evidence of exploitation.
-
 ## Concepts
 
-An attack path connects exposure conditions that could let an attacker reach a target.
+A reachable service can be the start of a larger exposure problem.
+An attack path connects conditions that could let an attacker reach a target.
 It shows a possible route, not proof of exploitation.
-Find a relationship that you can change to interrupt the route.
+Finding a relationship you can change gives you a practical way to interrupt that route.
+
+## Objectives
+
+- Trace an attack path from its entry point to its target.
+- Propose a change that interrupts the path and identify the operational check it needs.
 
 ## Prerequisites
 
@@ -78,4 +79,4 @@ Example exposure path.
 Do not change cloud resources during this lab.
 
 ---
-Next: [Lab 6: Examine identity and vulnerability context](../lab-06/README.md).
+Next: [Lab 6: Decide what to fix first](../lab-06/README.md).

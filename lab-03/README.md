@@ -1,17 +1,17 @@
-# Lab 3: Follow cloud activity and individual alerts
+# Lab 3: Follow the activity behind an alert
 
 **Environment:** FORTIDEMO-2026-04. **Access:** Read-only.
 
-## Objectives
-
-Use individual alerts and cloud activity to support an investigation.
-Separate a detected event from your explanation of its cause.
-
 ## Concepts
 
-Individual alerts and cloud activity records help you test an incident hypothesis.
-An anomaly is a detected deviation. Its cause can be legitimate or malicious.
-A cloud activity record supplies evidence about an action, its actor, and its outcome.
+An alert gives you a reason to investigate. The underlying activity helps you test the explanation.
+An anomaly is a detected deviation with a cause that can be legitimate or malicious.
+Cloud activity records help you check who performed an action and what happened.
+
+## Objectives
+
+- Identify what triggered a policy alert and what is unusual in an anomaly.
+- Use a cloud activity record to check an action, actor, and outcome.
 
 ## Prerequisites
 
@@ -71,4 +71,4 @@ Which source supports the statement "this identity performed this action"?
 Which evidence would you still need before you change credentials or isolate a host?
 
 ---
-Next: [Lab 4: Find resources with Explorer and Inventory](../lab-04/README.md).
+Next: [Lab 4: Find the resources behind the alert](../lab-04/README.md).

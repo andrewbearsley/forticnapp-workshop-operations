@@ -1,17 +1,17 @@
-# Lab 6: Examine identity and vulnerability context
+# Lab 6: Decide what to fix first
 
 **Environment:** FORTIDEMO-2026-04. **Access:** Read-only.
 
-## Objectives
-
-Use identity and vulnerability context to improve a remediation decision.
-Compare a package finding with the exposure of its affected resource.
-
 ## Concepts
 
-Exposure, identity permissions, and available fixes affect remediation priority.
-A vulnerability on a reachable host can need a different response from the same vulnerability elsewhere.
-Use this context to choose what to fix and which owner to involve.
+A long list of vulnerabilities does not tell you where to start.
+Exposure, identity permissions, and available fixes help you choose work that reduces risk.
+A reachable host with valuable permissions can need a different response from an isolated host with the same vulnerable package.
+
+## Objectives
+
+- Justify a remediation priority using exposure, permissions, and available fixes.
+- Identify where a source-code check could find a problem before deployment.
 
 ## Prerequisites
 
@@ -61,4 +61,4 @@ Use the exposure details to justify its place in your work list.
 For code scanning exercises, use the [AWS integration workshop](https://github.com/andrewbearsley/forticnapp-workshop-aws-automated).
 
 ---
-Next: [Lab 7: Interpret AWS and Azure CIS findings](../lab-07/README.md).
+Next: [Lab 7: What do your CIS results tell you?](../lab-07/README.md).

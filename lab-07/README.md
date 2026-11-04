@@ -1,17 +1,18 @@
-# Lab 7: Interpret AWS and Azure CIS findings
+# Lab 7: What do your CIS results tell you?
 
 **Environment:** FORTIDEMO-2026-04. Use the sandpit for an unavailable Azure example. **Access:** Read-only.
 
-## Objectives
-
-Read a CIS assessment with the correct provider, version, scope, and collection time.
-Trace a failed policy to its affected resources.
-
 ## Concepts
 
-A CIS benchmark groups security controls for a specific cloud provider and version.
+A compliance result is useful only when you know what was assessed.
+CIS benchmarks group security controls by cloud provider and version.
 FortiCNAPP assesses supported controls against collected resource data.
-Review failures and assessment gaps together to understand what the result covers.
+Review failures and assessment gaps together to decide what needs remediation and what needs more evidence.
+
+## Objectives
+
+- Identify the provider, benchmark version, scope, and time behind an assessment.
+- Trace a failed control to a resource and distinguish it from an assessment gap.
 
 ## Prerequisites
 
@@ -65,4 +66,4 @@ State whether each needs remediation or more evidence.
 Use the existing assessments for this exercise.
 
 ---
-Next: [Lab 8: Understand policy types and tuning controls](../lab-08/README.md).
+Next: [Lab 8: Choose the right policy control](../lab-08/README.md).

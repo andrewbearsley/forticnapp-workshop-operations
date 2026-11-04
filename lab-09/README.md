@@ -1,17 +1,17 @@
-# Lab 9: Build and test a custom query and policy
+# Lab 9: Turn a security question into a policy
 
 **Environment:** FORTINETAPACDEMO. **Access:** Read/write.
 
-## Objectives
-
-Test the condition before you save a policy. Compare the QBL and LQL authoring paths.
-Create an isolated policy that does not change existing detections.
-
 ## Concepts
 
+Your team can need a check tailored to its own resources or operating requirements.
 A query selects data that matches a condition. A policy uses that query to define an assessment or detection.
-Test the query first to check its scope and results.
-A disabled policy lets you review the configuration before activation.
+Test the query first. A disabled policy lets you review the result and configuration before activation.
+
+## Objectives
+
+- Save a guided query and test an LQL condition against collected EC2 data.
+- Create a disabled policy, change one setting, and verify the saved result.
 
 ## Prerequisites
 
@@ -182,4 +182,4 @@ Do not enable the policy during this exercise. Activation requires a separate sc
 Remove both queries and the policy in Lab 16.
 
 ---
-Next: [Lab 10: Build a custom compliance framework](../lab-10/README.md).
+Next: [Lab 10: Build a compliance framework for your review](../lab-10/README.md).

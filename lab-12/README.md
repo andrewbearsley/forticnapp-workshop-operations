@@ -1,17 +1,18 @@
-# Lab 12: Check coverage and notification routing
+# Lab 12: Can you trust the data behind your findings?
 
 **Environment:** FORTINETAPACDEMO. **Access:** Read-only review.
 
-## Objectives
-
-Check the evidence pipeline before trusting a result.
-Distinguish a detection policy, an alert route, and a report delivery configuration.
-
 ## Concepts
 
-Security findings depend on collected data. Missing or stale collection can leave gaps in an investigation.
-Alert routing sends notifications to a team. Report delivery distributes assessment results.
-Check collection and delivery separately to find operational gaps.
+An investigation can miss activity when collection is stale or incomplete.
+Even a useful alert needs to reach a responsible team.
+Collection health, alert routing, and report delivery are separate checks.
+Checking each one helps you find gaps between collected evidence and the people who need it.
+
+## Objectives
+
+- Check whether cloud and workload evidence is current.
+- Trace notification settings and write a handover for a collection issue or status update.
 
 ## Prerequisites
 
@@ -60,4 +61,4 @@ Keep credentials and unrelated identifiers out of the handover.
 **Checkpoint:** Your handover reports the observed issue without claiming an unverified cause.
 
 ---
-Next: [Lab 13: Use the CLI with explicit tenant scope](../lab-13/README.md).
+Next: [Lab 13: Ask the same questions through the CLI](../lab-13/README.md).

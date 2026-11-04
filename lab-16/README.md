@@ -1,16 +1,18 @@
-# Lab 16: Complete the investigation and remove lab objects
+# Lab 16: Present your findings and clean up
 
 **Environment:** Demo for investigation; sandpit for cleanup.
 
-## Objectives
-
-Present an evidence-based investigation. Confirm report scope and remove your workshop objects.
-
 ## Concepts
 
-An investigation needs conclusions that others can trace to evidence.
-Keep detected activity, possible exposure, and compliance results distinct when you present your findings.
-Remove your saved lab objects to leave the shared sandpit ready for the next exercise.
+An investigation is useful when another person can understand the evidence and act on your recommendation.
+Keep detected activity, possible exposure, and compliance results distinct in your explanation.
+Removing your saved lab objects leaves the shared sandpit ready for the next exercise.
+
+## Objectives
+
+- Present an investigation with supported conclusions and a proposed response.
+- Explain your risk and compliance evidence.
+- Remove your saved objects and verify that they are gone.
 
 ## Prerequisites
 

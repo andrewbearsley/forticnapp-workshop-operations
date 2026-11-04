@@ -1,17 +1,17 @@
-# Lab 13: Use the CLI with explicit tenant scope
+# Lab 13: Ask the same questions through the CLI
 
 **Environment:** Both tenants. **Access:** Read-only.
 
-## Objectives
-
-Retrieve the same evidence through the CLI. Use explicit scope and small JSON summaries.
-Keep credentials and unrelated tenant details out of shared output.
-
 ## Concepts
 
-The CLI retrieves FortiCNAPP data through commands that you can repeat or script.
-A profile stores connection settings and credentials. Account and subaccount flags select the tenant scope.
-Explicit scope helps you retrieve evidence from the intended environment.
+The console is useful for exploration. Commands let you repeat a check or use its result in a script.
+The CLI retrieves FortiCNAPP data for a selected account and subaccount.
+Matching the console's scope and time window helps you check that both tools answer the same question.
+
+## Objectives
+
+- Retrieve composite alert and collection summaries through the CLI.
+- Compare those summaries with the console using the same scope and time window.
 
 ## Prerequisites
 
@@ -94,4 +94,4 @@ Use that state to explain whether enabled collection is healthy.
 The wrapper accepts selected read commands and fixes the tenant flags.
 
 ---
-Next: [Lab 14: Retrieve evidence through the API](../lab-14/README.md).
+Next: [Lab 14: Get the evidence behind an alert through the API](../lab-14/README.md).

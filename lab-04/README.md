@@ -1,17 +1,17 @@
-# Lab 4: Find resources with Explorer and Inventory
+# Lab 4: Find the resources behind the alert
 
 **Environment:** FORTIDEMO-2026-04. **Access:** Read-only.
 
-## Objectives
-
-Find the resources behind a finding. Use relationships to explain exposure.
-Compare cloud inventory with workload telemetry.
-
 ## Concepts
 
-Explorer connects resources through their relationships. Inventory shows resource properties and collected workload data.
-Use these views to connect an alert to its affected resource and examine its exposure.
-Cloud inventory alone does not confirm workload agent coverage.
+An alert names an affected entity. You also need to understand where that entity sits in your environment.
+Explorer shows resource relationships. Inventory shows resource properties and collected workload data.
+Together, these views help you connect incident evidence to the resources and exposure that need attention.
+
+## Objectives
+
+- Trace an exposure route to a host in Explorer.
+- Connect an alert entity to resource details and workload evidence where available.
 
 ## Prerequisites
 
@@ -62,4 +62,4 @@ Label their sources as cloud configuration and workload telemetry.
 > Check **Coverage > Agents** when the investigation needs agent telemetry.
 
 ---
-Next: [Lab 5: Investigate risk and attack paths](../lab-05/README.md).
+Next: [Lab 5: Where could an attacker go next?](../lab-05/README.md).

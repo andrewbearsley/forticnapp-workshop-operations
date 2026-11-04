@@ -1,17 +1,18 @@
-# Lab 14: Retrieve evidence through the API
+# Lab 14: Get the evidence behind an alert through the API
 
 **Environment:** Both tenants. **Access:** Read-only.
 
-## Objectives
-
-Understand a REST request and its response. Retrieve the alert behind a console investigation.
-Check time filters, response shape, and pagination before reporting counts.
-
 ## Concepts
 
+Automation needs access to evidence, not just a view of it.
 An API request specifies a method, endpoint, and parameters.
-The response contains data or an error. Filters and pagination determine how much data you receive.
-Check these details before using a response as evidence or calculating totals.
+Filters and pagination determine how much data the response contains.
+Check the returned values against your console investigation before using them in another workflow.
+
+## Objectives
+
+- Retrieve an alert through the API and match its values to console evidence.
+- Determine whether a result is complete, partial, or a failed check.
 
 ## Prerequisites
 
@@ -137,4 +138,4 @@ If another page exists, your current row count is incomplete. A request error is
 > Do not turn any of them into an unsupported claim about tenant security.
 
 ---
-Next: [Lab 15: Investigate with the FortiCNAPP agent skill](../lab-15/README.md).
+Next: [Lab 15: Repeat your investigation with the FortiCNAPP agent skill](../lab-15/README.md).

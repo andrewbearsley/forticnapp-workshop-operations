@@ -1,17 +1,18 @@
-# Lab 15: Investigate with the FortiCNAPP agent skill
+# Lab 15: Repeat your investigation with the FortiCNAPP agent skill
 
 **Environment:** Both tenants. **Access:** Read-only.
 
-## Objectives
-
-Use the agent skill to repeat a known investigation. Validate its answer against the underlying evidence.
-Keep the external agent skill distinct from FortiCNAPP AI Assist and the workload agent.
-
 ## Concepts
 
-The FortiCNAPP agent skill gives an external coding agent instructions for CLI and API investigations.
-It can reduce manual evidence collection. You still need to check its sources, scope, and conclusions.
-It is separate from the workload agent and console AI Assist.
+An external coding agent can help collect and summarise evidence through the CLI and API.
+The FortiCNAPP agent skill gives it instructions for that work.
+Repeating a known investigation gives you a reference for checking its answer.
+The skill is separate from the workload agent and console AI Assist.
+
+## Objectives
+
+- Use the skill to repeat your composite investigation and check collection coverage.
+- Verify its main claims against the console or API evidence.
 
 ## Prerequisites
 
@@ -93,4 +94,4 @@ Correct any unsupported statement in your worksheet.
 Cite the console or API evidence used for that check.
 
 ---
-Next: [Lab 16: Complete the investigation and remove lab objects](../lab-16/README.md).
+Next: [Lab 16: Present your findings and clean up](../lab-16/README.md).

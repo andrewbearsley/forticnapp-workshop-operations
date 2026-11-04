@@ -1,17 +1,18 @@
-# Lab 2: Investigate a composite alert
+# Lab 2: Composite alerts: is this host compromised?
 
 **Environment:** FORTIDEMO-2026-04. **Access:** Read-only.
 
-## Objectives
-
-Start with the highest-value alert type: a composite alert.
-Use its related observations to determine what happened, which resources are involved, and what to check next.
-
 ## Concepts
 
-A composite alert combines related observations to help you investigate an incident.
-An observation can describe suspicious activity or security context, such as a vulnerable application.
-Use the combined evidence to identify affected entities and decide what to check next.
+A suspicious event needs context before you can decide how to respond.
+Composite alerts bring related observations together, which makes them a useful investigation starting point.
+Some observations describe activity. Others add context, such as a vulnerable application.
+Use the combined evidence to test a possible compromise.
+
+## Objectives
+
+- Reconstruct the activity in a composite alert using its observations and graph.
+- Support your explanation with evidence and recommend the next check.
 
 ## Prerequisites
 
@@ -119,4 +120,4 @@ Keep the alert unchanged. Do not post comments or use **Close as false positive*
 They can find the evidence for each fact and identify the next check you propose.
 
 ---
-Next: [Lab 3: Follow cloud activity and individual alerts](../lab-03/README.md).
+Next: [Lab 3: Follow the activity behind an alert](../lab-03/README.md).

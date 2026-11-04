@@ -1,18 +1,18 @@
-# Lab 1: Read the console and confirm scope
+# Lab 1: What can FortiCNAPP tell you?
 
 **Environment:** FORTIDEMO-2026-04. **Access:** Read-only.
 
-## Objectives
-
-Find the main work areas. Confirm the tenant before you inspect data.
-Explain which evidence comes from configuration collection, activity logs, and workload telemetry.
-
 ## Concepts
 
-The console shows different types of evidence about the same resources.
-Configuration collection supports compliance checks. Activity logs record cloud actions.
-Workload telemetry shows processes and connections.
-Check the tenant, scope, and collection time to interpret each result.
+Before you act on a finding, you need to know what it tells you.
+An alert describes detected activity or a policy event. Compliance results assess configuration.
+Exposure views help you understand what an attacker could reach.
+These views answer different questions about the same environment.
+
+## Objectives
+
+- Match the main console views to the security questions they answer.
+- Distinguish activity, compliance, and exposure using dashboard examples.
 
 ## Prerequisites
 
@@ -69,4 +69,4 @@ Does a zero alert count prove that an account is secure?
 Check coverage, filters, and collection times before you answer.
 
 ---
-Next: [Lab 2: Investigate a composite alert](../lab-02/README.md).
+Next: [Lab 2: Composite alerts: is this host compromised?](../lab-02/README.md).

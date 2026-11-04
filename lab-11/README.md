@@ -1,17 +1,18 @@
-# Lab 11: Configure AWS and Azure CIS reports
+# Lab 11: Build AWS and Azure CIS reports your team can use
 
 **Environment:** FORTINETAPACDEMO. **Access:** Read/write.
 
-## Objectives
-
-Configure separate CIS reports for AWS and Azure.
-Select the correct framework version, data scope, assessment statuses, and delivery settings.
-
 ## Concepts
 
-A report configuration selects the framework, resource scope, assessment statuses, and delivery settings.
+A report must give its readers the right evidence for the right resources.
+Its configuration selects the framework, scope, assessment statuses, and delivery settings.
 The generated report contains the assessment evidence for those selections.
 Separate AWS and Azure configurations keep each provider's benchmark and scope clear.
+
+## Objectives
+
+- Create separate AWS and Azure CIS report configurations with the intended scope.
+- Check assessment gaps, recipients, and delivery settings before enabling distribution.
 
 ## Prerequisites
 
@@ -84,4 +85,4 @@ Do not enable delivery to a shared email channel during the lab.
 Keep both configurations for cleanup in Lab 16.
 
 ---
-Next: [Lab 12: Check coverage and notification routing](../lab-12/README.md).
+Next: [Lab 12: Can you trust the data behind your findings?](../lab-12/README.md).

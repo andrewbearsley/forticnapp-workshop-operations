@@ -1,17 +1,18 @@
-# Lab 8: Understand policy types and tuning controls
+# Lab 8: Choose the right policy control
 
 **Environment:** FORTINETAPACDEMO. **Access:** Read-only review.
 
-## Objectives
-
-Find every category in Policy Manager. Identify which controls apply to each category.
-Prepare a tuning decision before making a change.
-
 ## Concepts
 
-Policy categories evaluate different evidence and expose different tuning controls.
+Tuning starts with the problem you want to solve: too many matches, the wrong priority, or the wrong recipients.
+Policy categories evaluate different evidence and expose different controls.
 A compliance query tests resource configuration. A composite policy combines observations for investigation.
-Review the category and available controls before choosing a change.
+Choose a control that addresses the problem without hiding useful evidence.
+
+## Objectives
+
+- Compare the available controls across all seven policy categories.
+- Propose one tuning change and explain its expected result.
 
 ## Prerequisites
 
@@ -152,4 +153,4 @@ Include one check for evidence that the change could hide.
 Keep existing policies unchanged. You will create your own policy in Lab 9.
 
 ---
-Next: [Lab 9: Build and test a custom query and policy](../lab-09/README.md).
+Next: [Lab 9: Turn a security question into a policy](../lab-09/README.md).

@@ -10,7 +10,8 @@ Use a unique participant suffix for every saved object.
 Delete only objects created for the current workshop exercise.
 
 Keep student pages focused on lab actions and concepts.
-Add a short Concepts section below each lab's Objectives. Explain why the work matters.
+Put Concepts before Objectives in each lab. Explain the purpose before the actions.
+Use titles and objectives that describe useful student outcomes.
 Put delivery planning, credential administration, and build instructions in instructor-guide.md.
 Remove explanations that repeat the interface or a previous instruction.
 
