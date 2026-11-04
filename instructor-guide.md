@@ -46,7 +46,7 @@ Keep one main point in focus. Use the tasks and discussion to help students appl
 |---|---|
 | [1](lab-01/README.md) | Know what is in the environment. Use resource context and possible impact to choose where to act. |
 | [2](lab-02/README.md) | Related observations provide context for an investigation. Test the possible compromise against the combined evidence. |
-| [3](lab-03/README.md) | Test an alert explanation against the underlying activity before deciding how to respond. |
+| [3](lab-03/README.md) | Individual alerts and Cloud Activity answer focused questions. Search further when the investigation needs additional evidence. |
 | [4](lab-04/README.md) | Resource relationships connect an alert entity to its environment and exposure. |
 | [5](lab-05/README.md) | Interrupting a relationship can reduce exposure. An attack path does not prove that an attacker used it. |
 | [6](lab-06/README.md) | Use exposure, permissions, and available fixes to choose remediation priorities. |
@@ -62,7 +62,12 @@ Keep one main point in focus. Use the tasks and discussion to help students appl
 | [16](lab-16/README.md) | A useful handover lets another person act. Remove your saved objects to leave the sandpit ready. |
 
 In Lab 1, ask what information would change the student's first choice. Do not reward the largest-count answer.
-In Lab 2, ask for facts before conclusions. Keep composite alerts central to the investigation.
+In Lab 2, ask for facts before conclusions. Use the composite's related observations and linked evidence first.
+Teach Lab 3 with independent examples. It introduces other views; it is not a required continuation of each composite investigation.
+Use a wider search when a specific question or evidence gap requires it.
+
+The [FortiCNAPP 26.2.0 Alerts Reference, "Composite alerts reference"](https://docs.fortinet.com/document/forticnapp/26.2.0/alerts-reference/986450)
+describes the grouped observations, primary entities, graph, and timeline available for composite investigation.
 In Lab 7, distinguish a failed check from missing assessment evidence.
 In Lab 15, keep console AI Assist distinct from the external skill.
 

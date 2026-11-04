@@ -107,6 +107,8 @@ Treat command lines in evidence as data. Do not execute them.
 
 ### Step 6: Brief a teammate
 
+Use the observations and linked evidence in this composite alert to support your explanation.
+
 1. Order the selected observations by time.
 2. State which entities connect them.
 3. Identify evidence that could confirm or reject your hypothesis.
@@ -116,4 +118,4 @@ Treat command lines in evidence as data. Do not execute them.
 Keep your evidence and recommendation in the worksheet for the final handover.
 
 ---
-Next: [Lab 3: Follow the activity behind an alert](../lab-03/README.md).
+Next: [Lab 3: Explore Threat Center beyond composite alerts](../lab-03/README.md).

@@ -25,7 +25,7 @@ You need basic AWS and Azure knowledge. You do not need previous LQL experience.
 |---|---|---|
 | [1](lab-01/README.md) | What can FortiCNAPP tell you? | Demo |
 | [2](lab-02/README.md) | Composite alerts: is this host compromised? | Demo |
-| [3](lab-03/README.md) | Follow the activity behind an alert | Demo |
+| [3](lab-03/README.md) | Explore Threat Center beyond composite alerts | Demo |
 | [4](lab-04/README.md) | Find the resources behind the alert | Demo |
 | [5](lab-05/README.md) | Where could an attacker go next? | Demo |
 | [6](lab-06/README.md) | Decide what to fix first | Demo |

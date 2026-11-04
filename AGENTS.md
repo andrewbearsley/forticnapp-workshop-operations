@@ -28,6 +28,8 @@ Use magenta callouts for controls. Keep evidence screenshots clear of callouts.
 Add an observable checkpoint after each important step.
 State what evidence students must find to check an answer.
 Tie tasks and checkpoints to a useful decision or an observable result.
+Teach additional investigation views as tools for specific questions.
+Do not make a separate search compulsory when the composite's linked evidence answers the question.
 Do not ask students to copy counts or fill tables without a later use for that evidence.
 Keep mechanical success checks for setup, saved configuration, and cleanup.
 Use brief hints for practical help. Use What matters callouts for key lessons.
