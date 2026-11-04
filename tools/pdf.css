@@ -49,7 +49,6 @@ body {
 .cover-kicker { color: var(--red); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 6mm; }
 .cover-rule { width: 40mm; height: 2mm; background: var(--red); margin: 10mm 0; }
 .cover-meta { color: var(--muted); margin: 0; }
-.cover-note { color: var(--muted); max-width: 120mm; margin-top: 30mm; font-size: 9pt; }
 
 /* Contents */
 .contents { break-after: page; }
@@ -99,7 +98,8 @@ pre {
 pre code { background: none; padding: 0; font-size: inherit; }
 pre.mermaid { background: none; text-align: center; break-inside: avoid; }
 pre.mermaid svg { max-width: 100%; max-height: 125mm; }
-#overview table { break-inside: avoid; }
+.part[data-section="overview"] table,
+.part[data-section="worksheet"] table { break-inside: avoid; }
 
 table { border-collapse: collapse; width: 100%; font-size: 9pt; break-inside: auto; }
 tr { break-inside: avoid; }

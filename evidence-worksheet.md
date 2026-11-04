@@ -23,6 +23,25 @@ Keep your completed worksheet in approved private storage.
 | CLI/API source and pagination status | |
 | Skill conclusion checked against evidence | |
 
+## CIS assessments
+
+| Provider | Framework and version | Resource scope | Assessment time | Gap to investigate |
+|---|---|---|---|---|
+| AWS | | | | |
+| Azure | | | | |
+
+## Policy review
+
+| Category | Example policy | Available controls | Review finding |
+|---|---|---|---|
+| Compliance | | | |
+| Vuln Build time | | | |
+| Vuln Run time | | | |
+| Data | | | |
+| Anomalies | | | |
+| Threat Observations | | | |
+| Composite Alerts | | | |
+
 ## Created objects
 
 | Tenant | Object type | Name | ID | Removed |

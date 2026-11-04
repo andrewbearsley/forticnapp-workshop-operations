@@ -87,7 +87,8 @@ Compare the requested time period with the period it actually queried.
 Check whether it handled all required pages.
 Correct any unsupported statement in your worksheet.
 
-**Checkpoint:** Explain what the skill saved you and what you still had to verify.
+**Checkpoint:** Name one useful result from the agent and one claim that you checked yourself.
+Cite the console or API evidence used for that check.
 
 ---
 Next: [Lab 16: Complete the investigation and remove lab objects](../lab-16/README.md).

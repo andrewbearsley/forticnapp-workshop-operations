@@ -16,7 +16,7 @@ Explicit scope helps you retrieve evidence from the intended environment.
 ## Prerequisites
 
 Install `lacework` and `jq` using the [CLI reference](https://docs.fortinet.com/document/forticnapp/latest/cli-reference).
-Use the API key supplied for your lab account.
+Keep the sandpit profile from Lab 9. Use the API key supplied for your read-only demo account.
 Clone this repository or download its files. Run commands from the repository root.
 
 ## Lab steps
@@ -31,25 +31,21 @@ jq --version
 **Checkpoint:** Both commands print a version.
 The examples use bash or zsh. Use an approved equivalent shell for other systems.
 
-### Step 2: Configure separate profiles
+### Step 2: Add the demo profile
 
-Use the downloaded key file for each approved tenant.
-Replace the file paths below with your private paths.
+Keep the sandpit profile from Lab 9. Add a separate demo profile.
+Replace the key file path below with your private path.
 
 ```bash
 lacework configure --profile fortidemo-2026-04-readonly-use \
   --account partner-demo --subaccount fortidemo-2026-04 \
   --json_file /PRIVATE/PATH/demo-key.json --noninteractive
-
-lacework configure --profile fortinetapacdemo \
-  --account partner-demo --subaccount fortinetapacdemo \
-  --json_file /PRIVATE/PATH/sandpit-key.json --noninteractive
 ```
 
-These commands save local credentials. They do not create an API key.
+The command saves local credentials. It does not create an API key.
 
-> [!CAUTION]
-> Keep key files and CLI configuration private. Do not paste them into chat, tickets, or Git.
+**Checkpoint:** The configuration command completes without an error.
+Keep the downloaded key file and local CLI configuration private.
 
 ### Step 3: Verify the selected scope
 
@@ -89,10 +85,13 @@ sh tools/lw-read.sh sandpit cloud-account list \
         healthy:([.[] | select(.state.ok == true)] | length)})'
 ```
 
-**Checkpoint:** Explain why an enabled integration can still need attention.
+Compare `enabled` and `healthy` for one integration type.
+Use **Settings > Cloud accounts** to check the state of its integrations.
+
+**Checkpoint:** Record the two counts and one integration state from the console.
+Use that state to explain whether enabled collection is healthy.
 
 The wrapper accepts selected read commands and fixes the tenant flags.
-For Lab 9, use native commands with explicit sandpit flags because that lab saves new objects.
 
 ---
 Next: [Lab 14: Retrieve evidence through the API](../lab-14/README.md).

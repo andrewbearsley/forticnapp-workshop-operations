@@ -16,6 +16,7 @@ Cloud inventory alone does not confirm workload agent coverage.
 ## Prerequisites
 
 Complete Lab 2. Keep one affected entity in your worksheet.
+Use it to check whether an exposed resource is also part of your incident.
 
 ## Lab steps
 
@@ -32,17 +33,19 @@ Complete Lab 2. Keep one affected entity in your worksheet.
 
 ![Explorer with an internet exposure query](images/explorer-query.png)
 
-**Checkpoint:** The query asks for internet-exposed hosts.
+**Checkpoint:** The query contains **Hosts** and **Internet Exposed = True**.
 If no hosts match, check the scope and data collection before changing the query.
 
 ### Step 2: Read a graph
 
-1. Select a host that has alerts or attack paths.
-2. Open **Graph**.
-3. Follow the resource relationships that permit exposure.
-4. Compare the host with the entity from your alert.
+1. Look for the host from your composite investigation in the results.
+2. Select it if present. Otherwise, select a host with alerts or attack paths.
+3. Open **Graph**.
+4. Follow the resource relationships that permit exposure.
+5. Record whether this is your incident host or a separate exposure example.
 
-**Checkpoint:** Explain the route using the resources shown.
+**Checkpoint:** List the resources along one exposure route in graph order.
+Use the relationship labels to check each connection.
 
 ### Step 3: Compare inventory views
 
@@ -52,7 +55,8 @@ If no hosts match, check the scope and data collection before changing the query
 4. Open **Inventory > Hosts**.
 5. Examine the **Machines** and **Processes** views.
 
-**Checkpoint:** Explain which view describes cloud configuration and which view describes observed workload activity.
+**Checkpoint:** Record one resource property from **Resource Inventory** and one process from **Hosts**.
+Label their sources as cloud configuration and workload telemetry.
 
 > **What matters:** A resource in cloud inventory does not prove that a workload agent is installed.
 > Check **Coverage > Agents** when the investigation needs agent telemetry.

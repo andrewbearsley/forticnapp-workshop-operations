@@ -30,7 +30,8 @@ Screenshots show demo report controls. Create reports only in the sandpit.
 
 ![Report configurations](images/reports.png)
 
-**Checkpoint:** Distinguish a report configuration from a generated assessment report.
+**Checkpoint:** Record the framework and scope from each configuration.
+These are instructions for report generation, not assessment results.
 
 ### Step 2: Configure the AWS report
 
@@ -56,8 +57,7 @@ Screenshots show demo report controls. Create reports only in the sandpit.
 An email channel is required even when delivery is off.
 Check the saved configuration's state. Do not rely only on the creation form's switch.
 
-> **What matters:** Keep **Manual** and **Could Not Assess** visible when the report must show assessment gaps.
-> Hiding these statuses can remove evidence that the report reader needs.
+> **What matters:** A report can hide assessment gaps if you exclude **Manual** and **Could Not Assess** results.
 
 ### Step 3: Configure the Azure report
 
@@ -65,7 +65,8 @@ Repeat Step 2 with the required Azure CIS framework.
 Use `Workshop-YOURID-Azure-CIS` as the name.
 Select the approved Azure subscription scope. Keep delivery disabled.
 
-**Checkpoint:** You have two separate configurations. Each uses the correct provider, version, and data scope.
+**Checkpoint:** Reopen both configurations. Compare their provider, version, and scope with your Lab 7 assessment record.
+Both remain disabled.
 
 ### Step 4: Review the delivery plan
 
@@ -74,7 +75,8 @@ Select the approved Azure subscription scope. Keep delivery disabled.
 3. Identify the owner who approves enabling delivery.
 4. Check the available report preview from **Cloud Compliance > Frameworks**.
 
-**Checkpoint:** Explain what each recipient will receive and which resources the report covers.
+**Checkpoint:** Your delivery plan names the recipients, frequency, framework, and resource scope.
+Use the saved settings to check each item.
 
 Do not enable delivery to a shared email channel during the lab.
 Keep both configurations for cleanup in Lab 16.

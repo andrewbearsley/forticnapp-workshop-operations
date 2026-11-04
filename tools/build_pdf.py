@@ -259,8 +259,6 @@ def document(body, pages, base, built):
   <p class="cover-title">{html.escape(TITLE)}</p>
   <div class="cover-rule"></div>
   <p class="cover-meta">Built {built}<br>{('<a href="' + base + '">' + base.removeprefix('https://') + '</a>') if base else 'Local workshop edition'}</p>
-  <p class="cover-note">Use this copy to read ahead and follow along. The labs run against
-  live systems. Check the workshop source before delivery.</p>
 </section>"""
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><title>{html.escape(TITLE)}</title>

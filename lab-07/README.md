@@ -30,7 +30,8 @@ Complete Lab 1. Have your assigned AWS and Azure scopes ready.
 
 ![Cloud Compliance framework results](images/compliance-frameworks.png)
 
-**Checkpoint:** Your worksheet identifies the provider and benchmark version separately.
+**Checkpoint:** Your worksheet has one AWS row and one Azure row.
+Each row includes the framework title, version, scope, and assessment time.
 If the demo tenant has no Azure result in the selected scope, use the sandpit for that comparison.
 
 ### Step 2: Find a failed policy
@@ -43,7 +44,8 @@ If the demo tenant has no Azure result in the selected scope, use the sandpit fo
 
 ![A compliance policy with its resource assessment](images/compliance-policy.png)
 
-**Checkpoint:** Explain which resource failed and which condition needs investigation.
+**Checkpoint:** Record the failed resource and the policy condition.
+Use the resource assessment details to check that they match.
 
 ### Step 3: Interpret assessment coverage
 
@@ -52,7 +54,8 @@ If the demo tenant has no Azure result in the selected scope, use the sandpit fo
 3. Record one assessment limitation.
 4. Explain what evidence a manual control would need.
 
-**Checkpoint:** Distinguish a failed control from a control that was not assessed.
+**Checkpoint:** Record one failed control and one assessment gap.
+State whether each needs remediation or more evidence.
 
 > **What matters:** A passing automated assessment does not establish complete CIS certification.
 > Check manual controls, exclusions, coverage, and the exact framework version.

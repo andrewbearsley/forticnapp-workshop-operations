@@ -15,7 +15,8 @@ Find a relationship that you can change to interrupt the route.
 
 ## Prerequisites
 
-Complete Lab 4. Keep the affected resource from your composite investigation.
+Complete Lab 4. Keep your incident host and any separate exposure example in your worksheet.
+Your task is to propose one change that would interrupt an exposure path.
 
 ## Lab steps
 
@@ -26,7 +27,7 @@ Complete Lab 4. Keep the affected resource from your composite investigation.
 3. Identify the resource and condition.
 4. Compare its question with the composite alert from Lab 2.
 
-**Checkpoint:** Explain the difference between detected suspicious activity and a dangerous resource condition.
+**Checkpoint:** Record the activity described by your threat alert and the condition described by your risk alert.
 
 ### Step 2: Find the top work items
 
@@ -38,12 +39,12 @@ Complete Lab 4. Keep the affected resource from your composite investigation.
 
 ![Attack Path top work items](images/attack-work-items.png)
 
-**Checkpoint:** Support your choice with exposure and potential impact, not severity alone.
+**Checkpoint:** Name your first work item. Cite one exposure condition and one possible impact from its details.
 
 ### Step 3: Trace an exposure path
 
 1. Select **Path Investigation**.
-2. Select an AWS or Azure path with an exposure graph.
+2. Look for a path involving your incident host. If none appears, select an AWS or Azure exposure example.
 3. Scroll to the **EXPOSURE POLYGRAPH**.
 4. Trace the relationships from the entry point to the target.
 5. Inspect the available resource details, vulnerabilities, or compliance violations.
@@ -72,7 +73,7 @@ Example exposure path.
 3. Identify the service owner who must assess the operational effect.
 4. Record how you would verify the change.
 
-**Checkpoint:** Your proposal states the security result and the required operational check.
+**Checkpoint:** Name the relationship to change, the exposure it removes, and the service check needed before the change.
 
 Do not change cloud resources during this lab.
 

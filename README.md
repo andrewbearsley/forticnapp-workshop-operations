@@ -5,6 +5,7 @@ Investigate threats, assess cloud risk, customise policies, and automate evidenc
 
 Start with a composite alert. Follow its observations to the affected resources.
 Then build custom policies and CIS reports for AWS and Azure.
+Keep your findings in the worksheet. Use them to present a short investigation at the end.
 
 ## Who this workshop is for
 

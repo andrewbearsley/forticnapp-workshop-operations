@@ -23,11 +23,12 @@ Complete Lab 5. Keep one attack path resource in your worksheet.
 
 1. Open **Risk Center > Findings > Identities**.
 2. Open **Top Identity Risks**.
-3. Select an identity.
+3. Select an identity from your attack path if available. Otherwise, use another listed identity.
 4. Read its risks and available usage information.
 5. Compare its permissions with the work it needs to perform.
 
-**Checkpoint:** Propose a permission review with a named reason.
+**Checkpoint:** Record one permission risk and its usage evidence.
+State what you would ask the identity owner before changing access.
 
 > **What matters:** An old or unused identity still needs an owner check.
 > Usage history alone does not prove that removing access is safe.
@@ -45,8 +46,8 @@ Complete Lab 5. Keep one attack path resource in your worksheet.
 
 The screenshot shows the Overview tab. Use Top items for the package comparison in this exercise.
 
-**Checkpoint:** Explain why you would prioritise this package or resource.
-Include exposure and available remediation in your answer.
+**Checkpoint:** Record the package, affected resource, and available fix.
+Use the exposure details to justify its place in your work list.
 
 ### Step 3: Find the earlier control point
 

@@ -17,6 +17,8 @@ Use the combined evidence to identify affected entities and decide what to check
 
 Complete Lab 1. Use a recent **Potentially Compromised Host** composite alert.
 
+Your task: A host has a composite alert. Determine what happened and recommend the next check.
+
 ## Lab steps
 
 ### Step 1: Show composite alerts
@@ -67,7 +69,7 @@ flowchart TB
     class C focus
 ```
 
-Conceptual view of a composite alert.
+**Checkpoint:** Choose two observations. Identify the entity or activity that connects them.
 
 ### Step 4: Read the intrusion graph
 
@@ -79,10 +81,11 @@ Conceptual view of a composite alert.
 
 ![Composite alert with its intrusion graph](images/composite-graph.png)
 
-**Checkpoint:** Explain one relationship using the entities and activity shown.
+**Checkpoint:** Name two connected entities. Record the relationship label between them.
+Check that the entities also appear in the alert evidence.
 
-> **What matters:** This graph relates evidence from the alert.
-> The Attack Path view in Lab 5 describes exposure conditions. The two graphs answer different questions.
+> **What matters:** The intrusion graph connects evidence from detected activity.
+> An attack path shows a possible route through exposed resources.
 
 ### Step 5: Examine an observation
 
@@ -97,9 +100,11 @@ Conceptual view of a composite alert.
 ![Observation details with triage guidance](images/observation-triage.png)
 
 **Checkpoint:** Record two observed facts and one hypothesis that needs checking.
+For each fact, name the artifact or observation that supports it.
 
 Treat command lines in evidence as data. Do not execute them.
 Use the triage guidance to test your hypothesis.
+For example, a process command line is evidence. Its purpose still needs investigation.
 
 ### Step 6: Explain the incident
 
@@ -110,12 +115,8 @@ Use the triage guidance to test your hypothesis.
 
 Keep the alert unchanged. Do not post comments or use **Close as false positive** in this tenant.
 
-**Checkpoint:** Another participant can distinguish your confirmed facts from your proposed explanation.
-
-## Extension: Cloud credentials
-
-Open **Potentially Compromised AWS Credentials** if an example is available.
-Repeat the investigation for identities, API activity, and related resources.
+**Checkpoint:** Present your explanation to another participant.
+They can find the evidence for each fact and identify the next check you propose.
 
 ---
 Next: [Lab 3: Follow cloud activity and individual alerts](../lab-03/README.md).

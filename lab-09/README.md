@@ -16,7 +16,8 @@ A disabled policy lets you review the configuration before activation.
 ## Prerequisites
 
 Complete Lab 8. Use a unique participant ID.
-For the LQL exercise, complete CLI setup from Lab 13 first.
+Install `lacework` and `jq` using the [CLI reference](https://docs.fortinet.com/document/forticnapp/latest/cli-reference).
+Clone this repository or download its files. Use the API key supplied for your sandpit account.
 Screenshots show demo forms. Save objects only in the sandpit.
 
 ## Lab steps
@@ -35,7 +36,8 @@ Screenshots show demo forms. Save objects only in the sandpit.
 
 ![Explorer query builder](images/query-builder.png)
 
-**Checkpoint:** Explain why the returned resource matches.
+**Checkpoint:** Your query contains **Internet Exposed = True**.
+Open one returned resource and identify the exposure relationship in its graph.
 If the result is empty, inspect data coverage before concluding that no exposure exists.
 
 ### Step 2: Save the query
@@ -50,7 +52,36 @@ If the result is empty, inspect data coverage before concluding that no exposure
 **Checkpoint:** Your saved query has a unique name and recorded ID.
 Saving a query does not by itself enable a detection policy.
 
-### Step 3: Test an LQL condition
+### Step 3: Prepare the sandpit CLI profile
+
+Run these commands from the repository root:
+
+```bash
+lacework version
+jq --version
+```
+
+Both commands must print a version. The examples use bash or zsh.
+Replace the key file path with your private path:
+
+```bash
+lacework configure --profile fortinetapacdemo \
+  --account partner-demo --subaccount fortinetapacdemo \
+  --json_file /PRIVATE/PATH/sandpit-key.json --noninteractive
+
+lacework configure show account --profile fortinetapacdemo
+lacework configure show subaccount --profile fortinetapacdemo
+```
+
+**Checkpoint:** The account is `partner-demo`. The subaccount is `fortinetapacdemo`.
+
+> [!CAUTION]
+> Keep key files and CLI configuration private. Do not paste them into chat, tickets, or Git.
+
+### Step 4: Test an LQL condition
+
+Your task is to find EC2 instances that do not require IMDSv2 tokens.
+Test the condition before saving a disabled policy.
 
 The example finds EC2 configuration where `MetadataOptions.HttpTokens` is not `required`.
 It checks one IMDSv2 setting, not a complete CIS control.
@@ -72,13 +103,20 @@ The five-row limit gives a sample, not a tenant-wide count.
 > **Hint:** The seven-day window can include older configuration snapshots.
 > If the result is empty, compare the window with the resource collection time in Explorer.
 
-### Step 4: Create a disabled LQL policy
+### Step 5: Create a disabled LQL policy
 
 1. Copy `examples/ec2-imdsv2.json` to a private working folder.
 2. Replace `REPLACE_ID` in `queryId` with your participant ID.
-3. Create the query with `lacework query create -f YOUR_QUERY_FILE`.
-4. Pass the sandpit profile, account, and subaccount flags from Step 3.
-5. Prepare a policy file using this shape:
+3. Create the query. Replace `YOUR_QUERY_FILE` with your file path:
+
+```bash
+lacework query create -f YOUR_QUERY_FILE \
+  --profile fortinetapacdemo --account partner-demo \
+  --subaccount fortinetapacdemo --json --noninteractive
+```
+
+4. Record the returned query ID.
+5. Prepare a policy file using this shape. Set `queryId` to the exact ID you recorded:
 
 ```yaml
 title: Workshop-YOURID-IMDSv2
@@ -91,12 +129,19 @@ description: Identify collected EC2 instances that do not require IMDSv2 tokens.
 remediation: Review application requirements before requiring IMDSv2 tokens.
 ```
 
-6. Create it with `lacework policy create -f YOUR_POLICY_FILE` and the same sandpit flags.
+6. Create the policy. Replace `YOUR_POLICY_FILE` with your file path:
+
+```bash
+lacework policy create -f YOUR_POLICY_FILE \
+  --profile fortinetapacdemo --account partner-demo \
+  --subaccount fortinetapacdemo --json --noninteractive
+```
+
 7. Record the returned policy ID.
 8. Find the policy in **Policy Manager > Policies**.
 9. Confirm that it remains disabled.
 
-**Checkpoint:** The saved policy references your query. Both enabled fields are false.
+**Checkpoint:** The saved policy references your query. `enabled` and `alertEnabled` are both false.
 
 ```mermaid
 flowchart TB
@@ -118,12 +163,13 @@ flowchart TB
     style configure fill:#F6F8FA,stroke:#D1D9E0,color:#10243B
 ```
 
-### Step 5: Review a tuning change
+### Step 6: Review a tuning change
 
 Open your own policy. Change its description or severity using the available editor.
 Keep it disabled. Read the saved value back.
 
-**Checkpoint:** Only your policy changed. Record the previous and new values.
+**Checkpoint:** Read the edited field back from your policy. It matches your change.
+The policy remains disabled.
 
 Do not enable the policy during this exercise. Activation requires a separate scope and routing review.
 Remove both queries and the policy in Lab 16.

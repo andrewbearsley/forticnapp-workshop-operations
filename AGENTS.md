@@ -19,4 +19,7 @@ Keep original screenshots and tenant exports outside the tracked files.
 Close unrelated notices before captures. Redact identifiers and credentials.
 Use magenta callouts for controls. Keep evidence screenshots clear of callouts.
 Add an observable checkpoint after each important step.
+State what evidence students must find to check an answer.
+Use brief hints for practical help. Use What matters callouts for key lessons.
+Teach command setup before the first command that needs it.
 Rebuild the offline PDF after lab changes. Verify its rendered pages.

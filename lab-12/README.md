@@ -45,14 +45,16 @@ An enabled integration and a healthy collection state are different checks.
 4. Trace the intended route for a composite alert.
 5. Compare that route with the email channel in your report configuration.
 
-**Checkpoint:** Explain which setting defines the condition, which setting routes the alert, and which setting delivers the report.
+**Checkpoint:** Record one policy, the alert route you inspected, and the report email channel.
+Label which defines the condition, routes the alert, and delivers the report.
 
 > **What matters:** Check that alert notifications reach the responsible team.
 
 ### Step 3: Record an operational issue
 
-Write a short handover for one failed or stale collection, if present.
-Include the affected integration type, time, observed state, and next check.
+Write a short handover for one failed or stale collection.
+If none is present, use a healthy collection as a status update.
+Include the integration type, time, observed state, and next check.
 Keep credentials and unrelated identifiers out of the handover.
 
 **Checkpoint:** Your handover reports the observed issue without claiming an unverified cause.

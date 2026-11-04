@@ -30,6 +30,9 @@ Keep your evidence worksheet and the IDs of every object that you created.
 **Checkpoint:** Another participant can trace each main conclusion to its evidence.
 Do not change the demo alert's status or comments.
 
+**Extension:** Investigate **Potentially Compromised AWS Credentials** if available.
+Apply the same method to identities, API activity, and related resources.
+
 ### Step 2: Explain the risk and compliance evidence
 
 1. Explain an exposure path and a possible interruption.

@@ -30,7 +30,8 @@ Screenshots show the demo tenant. Save only in the sandpit.
 
 ![Framework Catalog](images/framework-catalog.png)
 
-**Checkpoint:** Explain the difference between a policy and a framework.
+**Checkpoint:** Name one section and a policy mapped to it.
+The policy defines the check. The framework groups that check with others.
 
 ```mermaid
 flowchart TB
@@ -64,11 +65,14 @@ Compliance reporting workflow.
 6. Select **Networking** in the copied framework.
 7. Click **Add / Edit policies**.
 8. Select **Selected policies**.
-9. Clear one selected policy.
-10. Click **Update section**.
-11. Save your custom framework.
+9. Choose one policy to omit from your custom review.
+10. Record why it is outside your review scope.
+11. Clear that policy.
+12. Click **Update section**.
+13. Save your custom framework.
 
-**Checkpoint:** Your framework appears under **Managed by you**. The source framework is unchanged.
+**Checkpoint:** Your framework appears under **Managed by you**.
+Reopen its edited section. The omitted policy is absent. The source framework is unchanged.
 
 > **What matters:** A modified CIS-based framework is a custom control set.
 > Do not present it as the complete, unchanged CIS benchmark.

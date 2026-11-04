@@ -38,11 +38,11 @@ Use your approved console account. Open [the console](https://partner-demo.lacew
 
 ![Dashboard with threat, compliance, and exposure widgets](images/dashboard.png)
 
-**Checkpoint:** Explain what each widget counts. State the collection time with your answer.
+**Checkpoint:** Record one count from each widget. Label it as activity, compliance, or exposure.
+Record the update time that you found.
 
-The counts answer different questions. An exposed vulnerability is a risk condition.
-An alert describes detected activity or a policy event. A compliance finding records an assessment result.
-One resource can appear in several views.
+For example, **Non-compliant resources** counts resources that fail an assessment.
+It does not count incidents. One resource can appear in several views.
 
 ### Step 3: Find the work areas
 

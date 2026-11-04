@@ -96,6 +96,9 @@ For a shorter session, select one path:
 - Automation: Labs 2 and 13 to 15.
 
 Include each selected lab's prerequisites. Include cleanup for any objects created.
+For an automation-only session, complete Lab 9 Step 3 before Lab 13.
+Lab 9 now configures the sandpit profile before its first CLI command.
+Lab 13 adds the demo profile.
 
 ## Build the offline copy
 

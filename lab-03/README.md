@@ -23,12 +23,15 @@ Complete Lab 2. Keep the composite alert's activity window in your worksheet.
 
 1. Open **Threat Center > Alerts**.
 2. Change **Alert category** to **Policy**.
-3. Set the date range to the activity window from Lab 2.
-4. Open an alert with activity that you can explain.
-5. Read the description and source.
-6. Identify the affected entity and policy when available.
+3. Start with the activity window from Lab 2.
+4. Open an available alert.
+5. Read its description and source.
+6. Record its activity window, affected entity, and policy.
 
-**Checkpoint:** State which condition produced the alert. Keep that statement separate from the business impact.
+If no example appears, widen the date range. Record the new window separately from your composite investigation.
+
+**Checkpoint:** Record the triggering condition and its affected entity.
+Use the description to check your answer.
 
 ### Step 2: Inspect an anomaly
 
@@ -37,19 +40,27 @@ Complete Lab 2. Keep the composite alert's activity window in your worksheet.
 3. Record what is unusual and which entity is involved.
 4. List the operational context needed to explain it.
 
-**Checkpoint:** Give one legitimate explanation and one security explanation that need investigation.
+**Checkpoint:** Give one legitimate explanation and one security explanation.
+Name one check that would help distinguish them.
 
 ### Step 3: Examine cloud activity
 
+Use your selected alert if it describes a cloud API action.
+If it concerns host activity, use a separate cloud activity example.
+
 1. Open **Threat Center > Cloud Activity**.
-2. Set a time range that includes the selected cloud alert.
-3. Use the visible filters to locate its identity or resource.
-4. Read the action, actor, time, and outcome available in the record.
-5. Compare the record with the alert description.
+2. Set the time range to your selected alert's activity window.
+3. Use the visible filters to locate its identity or resource, if known.
+4. Select a record that matches the alert, or an available record for a separate example.
+5. Read its action, actor, time, and available outcome.
+
+If no records appear, widen the date range.
+Record a separate example as separate evidence. Do not infer a connection to the host alert.
 
 ![Cloud Activity investigation view](images/cloud-activity.png)
 
-**Checkpoint:** Record one cloud action with its source and time.
+**Checkpoint:** Record one cloud action, its actor, time, and available outcome.
+State whether it matches your alert or is a separate example.
 
 > **Hint:** A host process event and a cloud API event have different sources.
 > Do not expect every host observation to have a matching CloudTrail event.
