@@ -1,6 +1,6 @@
 # Lab 6: Examine identity and vulnerability context
 
-**Environment:** FORTIDEMO-2026-04. **Access:** Read-only. **Time:** 30 minutes.
+**Environment:** FORTIDEMO-2026-04. **Access:** Read-only.
 
 ## Objectives
 
@@ -51,7 +51,7 @@ Include exposure and available remediation in your answer.
 
 **Checkpoint:** Identify which evidence concerns source code and which evidence concerns a running workload.
 
-This is an orientation exercise. The separate AWS workshop contains code scanning labs.
+For code scanning exercises, use the [AWS integration workshop](https://github.com/andrewbearsley/forticnapp-workshop-aws-automated).
 
 ---
 Next: [Lab 7: Interpret AWS and Azure CIS findings](../lab-07/README.md).

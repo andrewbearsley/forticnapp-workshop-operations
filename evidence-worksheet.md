@@ -1,6 +1,6 @@
 # Investigation worksheet
 
-Use one copy per participant. Keep live identifiers in your approved private storage.
+Keep your completed worksheet in approved private storage.
 
 | Field | Your evidence |
 |---|---|

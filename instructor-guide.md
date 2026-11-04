@@ -10,7 +10,9 @@ The existing AWS course teaches integration. This course starts with connected e
 
 FORTIDEMO-2026-04 is read-only for this workshop, including instructor work.
 Do not change alert status, post comments, create exceptions, run scans, or save configuration there.
-Do not use its admin key as a student credential.
+The instructor API key has admin permissions. A profile name does not restrict those permissions.
+Give students separate credentials with read-only permissions for this tenant.
+Never distribute the instructor key.
 The wrapper in `tools/lw-read.sh` limits selected commands. It does not replace restricted API permissions.
 
 Use FORTINETAPACDEMO for every saved object.
@@ -76,3 +78,29 @@ Before delivery, test the Azure report save path with the intended student role.
 Test any optional vulnerability policy clone exercise in the permitted sandpit scope.
 Check installation and skill invocation in the runtime that students will use.
 The managed-policy review is a guided investigation. It does not promise direct editing for every policy category.
+
+## Session planning
+
+Allow two full days with discussion and breaks. These times are estimates.
+Collection and assessment can continue after a lab ends.
+
+| Labs | Estimated minutes per lab |
+|---|---|
+| 1 to 8 | 20, 60, 35, 35, 45, 30, 45, 45 |
+| 9 to 16 | 60, 30, 40, 20, 35, 40, 35, 30 |
+
+For a shorter session, select one path:
+
+- Investigation: Labs 1 to 5 and the investigation steps in Lab 16.
+- Compliance: Labs 1, 7, 10, and 11.
+- Automation: Labs 2 and 13 to 15.
+
+Include each selected lab's prerequisites. Include cleanup for any objects created.
+
+## Build the offline copy
+
+Install Python dependencies from `requirements.txt`. Install Google Chrome.
+Run `python tools/build_pdf.py` after changes to student pages or images.
+Run `python tools/preflight.py` before publishing.
+Inspect the rendered PDF. Commit it with the source changes.
+The PDF contains the overview, labs, and evidence worksheet. It excludes this guide.

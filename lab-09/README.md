@@ -1,6 +1,6 @@
 # Lab 9: Build and test a custom query and policy
 
-**Environment:** FORTINETAPACDEMO. **Access:** Read/write. **Time:** 60 minutes.
+**Environment:** FORTINETAPACDEMO. **Access:** Read/write.
 
 ## Objectives
 
@@ -46,8 +46,8 @@ Saving a query does not by itself enable a detection policy.
 
 ### Step 3: Test an LQL condition
 
-The supplied example finds collected EC2 configuration where `MetadataOptions.HttpTokens` is not `required`.
-It is a focused IMDSv2 teaching example. It does not reproduce every condition in a CIS control.
+The example finds EC2 configuration where `MetadataOptions.HttpTokens` is not `required`.
+It checks one IMDSv2 setting, not a complete CIS control.
 
 From the repository root, run:
 
@@ -61,11 +61,10 @@ lacework query run -f examples/ec2-imdsv2.json \
 ```
 
 **Checkpoint:** The command succeeds. The result reports sample rows and their field names.
-The five-row limit is a preview. It is not a tenant-wide count.
+The five-row limit gives a sample, not a tenant-wide count.
 
 > **Hint:** The seven-day window can include older configuration snapshots.
-> A shorter window can be empty even when Explorer shows an older resource collection.
-> State the time window when you explain the result.
+> If the result is empty, compare the window with the resource collection time in Explorer.
 
 ### Step 4: Create a disabled LQL policy
 

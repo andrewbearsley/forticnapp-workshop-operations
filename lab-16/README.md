@@ -1,6 +1,6 @@
 # Lab 16: Complete the investigation and remove lab objects
 
-**Environment:** Demo for investigation; sandpit for cleanup. **Time:** 30 minutes.
+**Environment:** Demo for investigation; sandpit for cleanup.
 
 ## Objectives
 
@@ -63,10 +63,10 @@ Never select all objects for cleanup.
 ### Step 5: Close the session
 
 Close private exports and credential files.
-Follow the instructor's credential retention instructions.
+Remove temporary credential files that you no longer need.
 Do not revoke a shared key or remove another participant's local profile.
 
-**Checkpoint:** FORTIDEMO-2026-04 is unchanged. No new cloud resources were needed for the workshop.
+**Checkpoint:** Your workshop objects and temporary credential files are removed.
 
 ---
 Return to the [workshop overview](../README.md).

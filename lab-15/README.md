@@ -1,6 +1,6 @@
 # Lab 15: Investigate with the FortiCNAPP agent skill
 
-**Environment:** Both tenants. **Access:** Read-only. **Time:** 35 minutes.
+**Environment:** Both tenants. **Access:** Read-only.
 
 ## Objectives
 

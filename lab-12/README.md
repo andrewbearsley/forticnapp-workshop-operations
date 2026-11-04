@@ -1,6 +1,6 @@
 # Lab 12: Check coverage and notification routing
 
-**Environment:** FORTINETAPACDEMO. **Access:** Read-only review. **Time:** 20 minutes.
+**Environment:** FORTINETAPACDEMO. **Access:** Read-only review.
 
 ## Objectives
 
@@ -26,7 +26,7 @@ Complete Lab 11. Do not change shared integrations or channels.
 
 ![Agent coverage and inventory](images/agent-coverage.png)
 
-This screenshot uses FORTIDEMO-2026-04. Check your own sandpit collection state during the exercise.
+Check collection state in the sandpit.
 
 **Checkpoint:** Record one collection source and its latest successful update.
 An enabled integration and a healthy collection state are different checks.
@@ -41,8 +41,7 @@ An enabled integration and a healthy collection state are different checks.
 
 **Checkpoint:** Explain which setting defines the condition, which setting routes the alert, and which setting delivers the report.
 
-> **What matters:** A correct detection is of limited operational value if its notification reaches no responsible team.
-> A quiet inbox does not prove that the tenant has no important alerts.
+> **What matters:** Check that alert notifications reach the responsible team.
 
 ### Step 3: Record an operational issue
 

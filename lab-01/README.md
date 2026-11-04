@@ -1,6 +1,6 @@
 # Lab 1: Read the console and confirm scope
 
-**Environment:** FORTIDEMO-2026-04. **Access:** Read-only. **Time:** 20 minutes.
+**Environment:** FORTIDEMO-2026-04. **Access:** Read-only.
 
 ## Objectives
 
@@ -21,9 +21,6 @@ Use your approved console account. Open [the console](https://partner-demo.lacew
 4. Open **Dashboard**.
 
 **Checkpoint:** The tenant selector reads `FORTIDEMO-2026-04`.
-
-> [!IMPORTANT]
-> This tenant is read-only for the workshop. Do not save views, change alert status, or create exceptions.
 
 ### Step 2: Read the overview
 
@@ -51,7 +48,7 @@ One resource can appear in several views.
 | Reports | What evidence should be delivered, and to whom? |
 | Inventory and Coverage | What exists, and what data is being collected? |
 
-Locate each area in the navigation. Keep **Threat Center > Alerts** for the next lab.
+Locate each area in the navigation. Open **Threat Center > Alerts** for the next lab.
 
 **Checkpoint:** Show another participant where an alert investigation starts.
 

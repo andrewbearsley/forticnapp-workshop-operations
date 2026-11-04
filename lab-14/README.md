@@ -1,6 +1,6 @@
 # Lab 14: Retrieve evidence through the API
 
-**Environment:** Both tenants. **Access:** Read-only. **Time:** 40 minutes.
+**Environment:** Both tenants. **Access:** Read-only.
 
 ## Objectives
 
@@ -38,7 +38,6 @@ flowchart TB
 ```
 
 The `lacework api` command calls the REST API. The CLI manages authentication for the selected profile.
-You still need to understand the endpoint and response contract.
 
 ### Step 2: Compare a CLI list with an API response
 
@@ -70,9 +69,8 @@ Alert details can contain hostnames, addresses, identities, and command lines.
 
 ### Step 4: Understand search requests
 
-A documented search endpoint can use `POST` without changing tenant configuration.
-The method alone does not establish whether a request changes state.
-Check the endpoint's documented purpose before using it.
+A search endpoint can use `POST` without changing tenant configuration.
+Check the endpoint documentation to determine its effect.
 
 Run this read-only search in the sandpit:
 
@@ -92,8 +90,7 @@ lacework api post /api/v2/Alerts/search --file "$REQUEST_FILE" \
 rm -f "$REQUEST_FILE"
 ```
 
-Identify the `timeFilter` before execution. The request asks for the last 24 hours.
-Keep this exercise separate from create, update, scan, and delete operations.
+Check `timeFilter` before you run the request. It selects the last 24 hours.
 
 **Checkpoint:** Explain why a search POST and a policy creation POST have different effects.
 

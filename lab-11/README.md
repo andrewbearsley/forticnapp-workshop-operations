@@ -1,6 +1,6 @@
 # Lab 11: Configure AWS and Azure CIS reports
 
-**Environment:** FORTINETAPACDEMO. **Access:** Read/write. **Time:** 40 minutes.
+**Environment:** FORTINETAPACDEMO. **Access:** Read/write.
 
 ## Objectives
 
@@ -9,7 +9,7 @@ Select the correct framework version, data scope, assessment statuses, and deliv
 
 ## Prerequisites
 
-Complete Labs 7 and 10. Ask the instructor for approved resource groups.
+Complete Labs 7 and 10. Have your assigned AWS and Azure resource groups ready.
 Screenshots show demo report controls. Create reports only in the sandpit.
 
 ## Lab steps
@@ -36,7 +36,7 @@ Screenshots show demo report controls. Create reports only in the sandpit.
 6. Review **Severity**.
 7. Review **Status**.
 8. Turn off **Enabled** under **Delivery**.
-9. Select the instructor-approved **Email channel**.
+9. Select the **Email channel** assigned for this lab.
 10. Review **Delivery frequency**.
 11. Create the configuration.
 12. Open the saved configuration.

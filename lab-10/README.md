@@ -1,6 +1,6 @@
 # Lab 10: Build a custom compliance framework
 
-**Environment:** FORTINETAPACDEMO. **Access:** Read/write. **Time:** 30 minutes.
+**Environment:** FORTINETAPACDEMO. **Access:** Read/write.
 
 ## Objectives
 
@@ -9,7 +9,7 @@ Group policies for a specific reporting purpose. Keep a custom framework distinc
 ## Prerequisites
 
 Complete Lab 7. Use your participant ID.
-Use the AWS or Azure framework that the instructor selects.
+Use the AWS CIS framework that you examined in Lab 7.
 Screenshots show the demo tenant. Save only in the sandpit.
 
 ## Lab steps
@@ -46,15 +46,15 @@ flowchart TB
     style delivery fill:#F6F8FA,stroke:#D1D9E0,color:#10243B
 ```
 
-This diagram shows the compliance reporting relationship. Other policy categories have different workflows.
+Compliance reporting workflow.
 
 ### Step 2: Create a custom framework
 
 1. Return to the catalog.
 2. Click **Add Framework**.
-3. Select the instructor's source framework.
+3. Select the AWS CIS framework from Lab 7.
 4. Continue to the framework editor.
-5. Set a unique name: `Workshop-YOURID-AWS-review` or `Workshop-YOURID-Azure-review`.
+5. Set a unique name: `Workshop-YOURID-AWS-review`.
 6. Select **Networking** in the copied framework.
 7. Click **Add / Edit policies**.
 8. Select **Selected policies**.
@@ -77,7 +77,7 @@ This diagram shows the compliance reporting relationship. Other policy categorie
 **Checkpoint:** Your worksheet records the framework name, provider, revision, and reporting purpose.
 
 Framework changes can take up to 24 hours to appear in assessment results.
-Do not trigger repeated scans to force a classroom result.
+Continue with the existing assessment while the changes are evaluated.
 Keep this framework for cleanup. Lab 11 uses the built-in CIS frameworks for its main reports.
 
 ---

@@ -1,6 +1,6 @@
 # Lab 8: Understand policy types and tuning controls
 
-**Environment:** FORTINETAPACDEMO. **Access:** Read/write. **Time:** 45 minutes.
+**Environment:** FORTINETAPACDEMO. **Access:** Read/write.
 
 ## Objectives
 
@@ -31,8 +31,8 @@ The demo tenant includes Data policies. The sandpit may expose a different set.
 
 ![Data policy catalog](images/data-policies.png)
 
-The Data page warns that enabling a policy can initiate a later rescan for configured DSPM integrations.
-Read that notice before proposing a change. Do not enable Data policies during this class.
+Enabling a Data policy can initiate a rescan for configured DSPM integrations.
+Keep Data policies unchanged during this review.
 
 ### Step 2: Build a tuning record
 
@@ -49,7 +49,6 @@ Open one policy in each category. Record the controls that the current interface
 | Composite Alerts | Correlated activity, investigation context, and available tuning controls |
 
 **Checkpoint:** For each category, distinguish editable fields from descriptive information.
-Do not assume that all categories support the same edits or custom query languages.
 
 For **Vuln Build time**, inspect **Critical, fixable CVEs**.
 Its Details page shows **Action on failure** and container registry scope.
@@ -65,26 +64,26 @@ Record the visible **Frequency**, severity, and query conditions.
 
 Prepare one build-time change to CVE criteria and one runtime change to frequency or criteria.
 Use **Clone** for a sandpit trial when that control is available.
-Do not change the original managed policy. Review the clone's state and scope before saving or activation.
+Keep the original managed policy unchanged. Review the clone's state and scope before saving.
 
 For **Composite Alerts**, open **Potentially Compromised Host**.
 Read its description and contributing-observation model.
-The observed Details page exposes severity and status. Its Edit and Clone controls are disabled.
+The Details page shows severity and status. Its Edit and Clone controls are disabled.
 Do not treat a composite policy as an editable LQL query.
 
 ![Composite policy details](images/composite-policy.png)
 
 For **Anomalies**, inspect **New External Server IP Address Connection From Vulnerable Application**.
 Its Details page shows frequency, severity, domain, and type.
-Its Query tab states **No filter defined** for the observed managed policy.
-Record whether **Clone** is available. Do not assume that the baseline detection is an editable query.
+Its Query tab states **No filter defined** for this managed policy.
+Check whether **Clone** is available.
 
 ![Anomaly policy query view](images/anomaly-query.png)
 
 For **Threat Observations**, open **Anomalous AssumeRole request.** if that example is available.
 Read the description, false positive notes, triage, and remediation sections.
-The observed definition has disabled Edit and Clone controls.
-Use the definition to improve investigation. Do not assume that every observation definition supports direct customisation.
+The definition has disabled Edit and Clone controls.
+Use this guidance during an investigation.
 
 ![Threat observation definition](images/threat-observation.png)
 
@@ -114,9 +113,9 @@ Keep existing policies unchanged during this review.
 ![Custom policy form with query language choices](images/policy-builder.png)
 
 The form offers Compliance and Violation for the LQL path.
-The observed QBL path fixes the policy type to Compliance.
-The QBL form states that a new policy creates a corresponding Risk Insight within about six hours.
-Do not wait for that insight during the lab.
+The QBL path fixes the policy type to Compliance.
+A new QBL policy creates a corresponding Risk Insight within about six hours.
+Continue the lab while it is processed.
 
 **Checkpoint:** Explain why choosing a query language does not select every policy category in the catalog.
 

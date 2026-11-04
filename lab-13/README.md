@@ -1,6 +1,6 @@
 # Lab 13: Use the CLI with explicit tenant scope
 
-**Environment:** Both tenants. **Access:** Read-only. **Time:** 35 minutes.
+**Environment:** Both tenants. **Access:** Read-only.
 
 ## Objectives
 
@@ -10,7 +10,7 @@ Keep credentials and unrelated tenant details out of shared output.
 ## Prerequisites
 
 Install `lacework` and `jq` using the [CLI reference](https://docs.fortinet.com/document/forticnapp/latest/cli-reference).
-Use an instructor-approved API key for your own access. Do not use a shared instructor admin key.
+Use the API key supplied for your lab account.
 Clone this repository or download its files. Run commands from the repository root.
 
 ## Lab steps
@@ -44,7 +44,6 @@ These commands save local credentials. They do not create an API key.
 
 > [!CAUTION]
 > Keep key files and CLI configuration private. Do not paste them into chat, tickets, or Git.
-> A profile named `readonly-use` does not reduce the key's actual permissions.
 
 ### Step 3: Verify the selected scope
 
@@ -85,10 +84,8 @@ sh tools/lw-read.sh sandpit cloud-account list \
 ```
 
 **Checkpoint:** Explain why an enabled integration can still need attention.
-The output exposes counts, not cloud account IDs or role ARNs.
 
 The wrapper accepts selected read commands and fixes the tenant flags.
-Its restrictions do not replace restricted API credentials.
 For Lab 9, use native commands with explicit sandpit flags because that lab saves new objects.
 
 ---

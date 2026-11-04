@@ -1,6 +1,6 @@
 # Lab 3: Follow cloud activity and individual alerts
 
-**Environment:** FORTIDEMO-2026-04. **Access:** Read-only. **Time:** 35 minutes.
+**Environment:** FORTIDEMO-2026-04. **Access:** Read-only.
 
 ## Objectives
 
@@ -17,7 +17,7 @@ Complete Lab 2. Keep the composite alert's activity window in your worksheet.
 
 1. Open **Threat Center > Alerts**.
 2. Change **Alert category** to **Policy**.
-3. Use the instructor's example period.
+3. Set the date range to the activity window from Lab 2.
 4. Open an alert with activity that you can explain.
 5. Read the description and source.
 6. Identify the affected entity and policy when available.
@@ -33,8 +33,7 @@ Complete Lab 2. Keep the composite alert's activity window in your worksheet.
 
 **Checkpoint:** Give one legitimate explanation and one security explanation that need investigation.
 
-An anomaly indicates a deviation detected by the system.
-It does not establish malicious intent. A composite can bring related signals into a more useful investigation.
+An anomaly is a detected deviation. Investigate its cause before concluding that it is malicious.
 
 ### Step 3: Examine cloud activity
 

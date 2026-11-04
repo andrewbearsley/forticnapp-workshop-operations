@@ -1,6 +1,6 @@
 # Lab 4: Find resources with Explorer and Inventory
 
-**Environment:** FORTIDEMO-2026-04. **Access:** Read-only. **Time:** 35 minutes.
+**Environment:** FORTIDEMO-2026-04. **Access:** Read-only.
 
 ## Objectives
 
@@ -37,7 +37,6 @@ If no hosts match, check the scope and data collection before changing the query
 4. Compare the host with the entity from your alert.
 
 **Checkpoint:** Explain the route using the resources shown.
-Do not assume that the first host in a list is the alert's affected host.
 
 ### Step 3: Compare inventory views
 

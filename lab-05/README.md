@@ -1,6 +1,6 @@
 # Lab 5: Investigate risk and attack paths
 
-**Environment:** FORTIDEMO-2026-04. **Access:** Read-only. **Time:** 45 minutes.
+**Environment:** FORTIDEMO-2026-04. **Access:** Read-only.
 
 ## Objectives
 
@@ -37,7 +37,7 @@ Complete Lab 4. Keep the affected resource from your composite investigation.
 ### Step 3: Trace an exposure path
 
 1. Select **Path Investigation**.
-2. Select the instructor's AWS or Azure example.
+2. Select an AWS or Azure path with an exposure graph.
 3. Scroll to the **EXPOSURE POLYGRAPH**.
 4. Trace the relationships from the entry point to the target.
 5. Inspect the available resource details, vulnerabilities, or compliance violations.
@@ -57,8 +57,7 @@ flowchart LR
     class I,E,H,P,D node
 ```
 
-This is an example of possible exposure. Actual paths have different resources and relationships.
-An exposure path alone does not prove that an attacker used it.
+Example exposure path. The path shows what could happen, not evidence that it happened.
 
 ### Step 4: Propose a path interruption
 

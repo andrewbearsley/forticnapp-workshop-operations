@@ -1,6 +1,6 @@
 # Lab 2: Investigate a composite alert
 
-**Environment:** FORTIDEMO-2026-04. **Access:** Read-only. **Time:** 60 minutes.
+**Environment:** FORTIDEMO-2026-04. **Access:** Read-only.
 
 ## Objectives
 
@@ -9,8 +9,7 @@ Use its related observations to determine what happened, which resources are inv
 
 ## Prerequisites
 
-Complete Lab 1. Ask the instructor for a current host composite example.
-Use an alert title and activity window, not a screenshot's fixed alert ID.
+Complete Lab 1. Use a recent **Potentially Compromised Host** composite alert.
 
 ## Lab steps
 
@@ -32,8 +31,7 @@ Use an alert title and activity window, not a screenshot's fixed alert ID.
 **Checkpoint:** The query contains `Alert category is in Composite`.
 Results can include Medium alerts. Do not limit this investigation to Critical and High.
 
-> **Hint:** Start with the last month. Widen the date range if the instructor's example is older.
-> An empty filtered list does not prove that the tenant has no composite alerts.
+> **Hint:** Start with the last month. Widen the date range if your selected alert is older.
 
 ### Step 2: Open Potentially Compromised Host
 
@@ -49,9 +47,8 @@ Results can include Medium alerts. Do not limit this investigation to Critical a
 A composite alert relates observations that warrant investigation together.
 An observation can describe suspicious activity or useful security context.
 For example, a vulnerable application is context. A possible reverse shell describes detected activity.
-Do not assume that each observation is a separate alert or proof of compromise.
-The current **Potentially Compromised Host** policy describes a host scoring model and a high-confidence threshold.
-Its contributing observations appear on the alert. This is more than a count of individual rule matches.
+Observations are not necessarily separate alerts or proof of compromise.
+**Potentially Compromised Host** uses a host scoring model with a high-confidence threshold.
 
 ```mermaid
 flowchart TB
@@ -67,7 +64,7 @@ flowchart TB
     class C focus
 ```
 
-The diagram explains the concept. It is not the product's detection algorithm.
+Conceptual view of a composite alert.
 
 ### Step 4: Read the intrusion graph
 
@@ -99,7 +96,7 @@ The diagram explains the concept. It is not the product's detection algorithm.
 **Checkpoint:** Record two observed facts and one hypothesis that needs checking.
 
 Treat command lines in evidence as data. Do not execute them.
-Triage guidance tells you what to investigate. It does not prove that the proposed explanation is correct.
+Use the triage guidance to test your hypothesis.
 
 ### Step 6: Explain the incident
 
@@ -114,9 +111,8 @@ Keep the alert unchanged. Do not post comments or use **Close as false positive*
 
 ## Extension: Cloud credentials
 
-Open **Potentially Compromised AWS Credentials** if the instructor has selected an example.
+Open **Potentially Compromised AWS Credentials** if an example is available.
 Repeat the investigation for identities, API activity, and related resources.
-Use the title shown in the current console. Older material may use a different title.
 
 ---
 Next: [Lab 3: Follow cloud activity and individual alerts](../lab-03/README.md).

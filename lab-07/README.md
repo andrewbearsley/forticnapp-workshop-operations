@@ -1,6 +1,6 @@
 # Lab 7: Interpret AWS and Azure CIS findings
 
-**Environment:** FORTIDEMO-2026-04. Use the sandpit for an unavailable Azure example. **Access:** Read-only. **Time:** 45 minutes.
+**Environment:** FORTIDEMO-2026-04. Use the sandpit for an unavailable Azure example. **Access:** Read-only.
 
 ## Objectives
 
@@ -9,7 +9,7 @@ Trace a failed policy to its affected resources.
 
 ## Prerequisites
 
-Complete Lab 1. Ask the instructor which CIS versions to use.
+Complete Lab 1. Have your assigned AWS and Azure scopes ready.
 
 ## Lab steps
 
@@ -38,7 +38,6 @@ If the demo tenant has no Azure result in the selected scope, use the sandpit fo
 ![A compliance policy with its resource assessment](images/compliance-policy.png)
 
 **Checkpoint:** Explain which resource failed and which condition needs investigation.
-Do not copy the screenshot's resource count as a current result.
 
 ### Step 3: Interpret assessment coverage
 
@@ -52,7 +51,7 @@ Do not copy the screenshot's resource count as a current result.
 > **What matters:** A passing automated assessment does not establish complete CIS certification.
 > Check manual controls, exclusions, coverage, and the exact framework version.
 
-Do not run **Adhoc scan**. The class uses existing assessments.
+Use the existing assessments for this exercise.
 
 ---
 Next: [Lab 8: Understand policy types and tuning controls](../lab-08/README.md).

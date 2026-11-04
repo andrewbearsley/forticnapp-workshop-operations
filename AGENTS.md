@@ -9,6 +9,10 @@ Make workshop changes only in FORTINETAPACDEMO.
 Use a unique participant suffix for every saved object.
 Delete only objects created for the current workshop exercise.
 
+Keep student pages focused on lab actions and concepts.
+Put delivery planning, credential administration, and build instructions in instructor-guide.md.
+Remove explanations that repeat the interface or a previous instruction.
+
 Write procedures against the live console. Record untested steps in internal/validation.md.
 Keep original screenshots and tenant exports outside the tracked files.
 Close unrelated notices before captures. Redact identifiers and credentials.
