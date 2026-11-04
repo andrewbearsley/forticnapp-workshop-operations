@@ -12,6 +12,8 @@ Delete only objects created for the current workshop exercise.
 Keep student pages focused on lab actions and concepts.
 Put Concepts before Objectives in each lab. Explain the purpose before the actions.
 Use titles and objectives that describe useful student outcomes.
+Keep one main teaching point per lab in instructor-guide.md.
+Make the concepts, tasks, and discussion reinforce that point. Do not repeat it as a new section in every lab.
 Put delivery planning, credential administration, and build instructions in instructor-guide.md.
 Remove explanations that repeat the interface or a previous instruction.
 

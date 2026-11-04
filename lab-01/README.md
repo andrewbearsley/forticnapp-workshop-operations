@@ -4,15 +4,17 @@
 
 ## Concepts
 
-Before you act on a finding, you need to know what it tells you.
-An alert describes detected activity or a policy event. Compliance results assess configuration.
-Exposure views help you understand what an attacker could reach.
-These views answer different questions about the same environment.
+Cloud security starts with knowing what is there: resources, workloads, identities, and the connections between them.
+Then decide what needs attention. Suspicious activity needs investigation. Exposure and configuration problems need review.
+Use the affected resources and possible impact to decide where to act first.
+
+FortiCNAPP brings inventory, activity, and security findings together to support that work.
+This lab shows where to find those views and which questions they help you answer.
 
 ## Objectives
 
-- Match the main console views to the security questions they answer.
-- Distinguish activity, compliance, and exposure using dashboard examples.
+- Find where to understand your environment, investigate activity, and review risk.
+- Explain what context you need before choosing what to investigate or fix.
 
 ## Prerequisites
 
@@ -51,23 +53,22 @@ The useful question is what each count helps you decide.
 
 | Area | Use it to answer |
 |---|---|
+| Inventory and Coverage | What exists, and what data is being collected? |
 | Threat Center | What activity needs investigation? |
 | Risk Center | Which conditions need attention? |
 | Explorer | How are these resources related? |
 | Policy Manager | What query, policy, or framework defines this result? |
 | Reports | What evidence should be delivered, and to whom? |
-| Inventory and Coverage | What exists, and what data is being collected? |
 
 Use the table to locate the area you would open for an investigation.
 Then open **Threat Center > Alerts** for the next lab.
 
-**Checkpoint:** You know where to investigate activity and where to examine exposure.
-The next lab starts with a host that may be compromised.
+**Checkpoint:** You can choose a starting view and explain what evidence you need from it.
 
 ## Discussion
 
-Does a zero alert count prove that an account is secure?
-Check coverage, filters, and collection times before you answer.
+You see a possible compromise on one host and many failed configuration checks.
+Where would you start? What would you need to know about the resources, their exposure, and possible impact?
 
 ---
 Next: [Lab 2: Composite alerts: is this host compromised?](../lab-02/README.md).

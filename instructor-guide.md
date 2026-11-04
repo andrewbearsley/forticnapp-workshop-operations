@@ -38,15 +38,33 @@ Do not depend on an alert appearing during the class.
 The demo screenshots use a historical month view. Extend the date range when an example ages out.
 Use another composite when the original alert is unavailable.
 
-## Teaching checkpoints
+## What each lab should teach
 
-In Lab 2, ask for facts before conclusions. A composite alert is a high-value investigation starting point.
-It does not remove the need to validate activity and scope.
-In Lab 5, ask which relationship permits exposure. An attack path does not prove exploitation.
-In Lab 7, ask which controls were assessed. A report does not prove complete certification.
-In Lab 9, test query results before saving a policy. An empty result needs a coverage check.
-In Lab 11, check the provider, version, and data scope separately.
-In Lab 15, compare the agent's conclusion with evidence. Keep AI Assist distinct from the external skill.
+Keep one main point in focus. Use the tasks and discussion to help students apply it.
+
+| Lab | Main point |
+|---|---|
+| [1](lab-01/README.md) | Know what is in the environment. Use resource context and possible impact to choose where to act. |
+| [2](lab-02/README.md) | Related observations provide context for an investigation. Test the possible compromise against the combined evidence. |
+| [3](lab-03/README.md) | Test an alert explanation against the underlying activity before deciding how to respond. |
+| [4](lab-04/README.md) | Resource relationships connect an alert entity to its environment and exposure. |
+| [5](lab-05/README.md) | Interrupting a relationship can reduce exposure. An attack path does not prove that an attacker used it. |
+| [6](lab-06/README.md) | Use exposure, permissions, and available fixes to choose remediation priorities. |
+| [7](lab-07/README.md) | An assessment needs its benchmark version, scope, time, and gaps to give its score meaning. |
+| [8](lab-08/README.md) | Choose a tuning control that addresses the problem without hiding useful evidence. |
+| [9](lab-09/README.md) | Test what a query matches before using it in a policy. Review the disabled policy before activation. |
+| [10](lab-10/README.md) | A framework selects the controls for a review. A changed CIS selection is a custom control set. |
+| [11](lab-11/README.md) | Useful reports give the right recipients evidence for their scope, including assessment gaps. |
+| [12](lab-12/README.md) | Check collection health and notification routing before relying on findings or a quiet inbox. |
+| [13](lab-13/README.md) | CLI commands make checks repeatable. Match scope and time before comparing their results with the console. |
+| [14](lab-14/README.md) | Reliable API automation needs matching evidence, the correct response structure, and complete results. |
+| [15](lab-15/README.md) | An agent can help investigate. Verify its conclusions against the underlying evidence. |
+| [16](lab-16/README.md) | A useful handover lets another person act. Remove your saved objects to leave the sandpit ready. |
+
+In Lab 1, ask what information would change the student's first choice. Do not reward the largest-count answer.
+In Lab 2, ask for facts before conclusions. Keep composite alerts central to the investigation.
+In Lab 7, distinguish a failed check from missing assessment evidence.
+In Lab 15, keep console AI Assist distinct from the external skill.
 
 ## Shared tenant effects
 
