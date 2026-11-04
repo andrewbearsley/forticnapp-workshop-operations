@@ -80,7 +80,5 @@ Example exposure path.
 **Checkpoint:** Would your proposed change interrupt the path?
 Show the relationship it removes and explain what the service owner must check before making it.
 
-Do not change cloud resources during this lab.
-
 ---
 Next: [Lab 6: Decide what to fix first](../lab-06/README.md).

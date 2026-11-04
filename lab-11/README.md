@@ -17,7 +17,6 @@ Separate AWS and Azure configurations keep each provider's benchmark and scope c
 ## Prerequisites
 
 Complete Labs 7 and 10.
-Screenshots show demo report controls. Create reports only in the sandpit.
 
 ## Lab steps
 
@@ -28,8 +27,7 @@ The AWS and Azure teams need evidence for their own resources. Check how an exis
 1. Confirm **FORTINETAPACDEMO**.
 2. Open **Reports**.
 3. Inspect an AWS report configuration.
-4. Inspect an Azure report configuration.
-5. Check which framework and data scope each configuration selects.
+4. Check its framework and data scope.
 
 ![Report configurations](images/reports.png)
 

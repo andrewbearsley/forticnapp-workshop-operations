@@ -17,7 +17,7 @@ Choose a control that addresses the problem without hiding useful evidence.
 ## Prerequisites
 
 Complete Labs 2 and 7.
-Screenshots use the demo tenant. Review sandpit policies without changing them.
+Review sandpit policies without changing them.
 
 ## Lab steps
 

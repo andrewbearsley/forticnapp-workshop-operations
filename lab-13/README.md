@@ -20,17 +20,7 @@ Run commands from the repository root.
 
 ## Lab steps
 
-### Step 1: Check the tools
-
-```bash
-lacework version
-jq --version
-```
-
-**Checkpoint:** Both commands print a version.
-The examples use bash or zsh. Use an approved equivalent shell for other systems.
-
-### Step 2: Add the demo profile
+### Step 1: Add the demo profile
 
 Keep the sandpit profile from Lab 9. Add a separate demo profile.
 Use the API key supplied for your read-only demo account.
@@ -44,10 +34,9 @@ lacework configure --profile fortidemo-2026-04-readonly-use \
 
 The command saves local credentials. It does not create an API key.
 
-**Checkpoint:** The configuration command completes without an error.
 Keep the downloaded key file and local CLI configuration private.
 
-### Step 3: Verify the selected scope
+### Step 2: Verify the selected scope
 
 ```bash
 lacework configure show account --profile fortidemo-2026-04-readonly-use
@@ -57,7 +46,7 @@ lacework configure show subaccount --profile fortidemo-2026-04-readonly-use
 **Checkpoint:** The account is `partner-demo`. The subaccount is `fortidemo-2026-04`.
 Do not print the complete CLI configuration.
 
-### Step 4: Find the same alerts without opening the console
+### Step 3: Find the same alerts without opening the console
 
 Build a summary you could repeat during a daily review.
 
@@ -78,7 +67,7 @@ Each alert-list request must use a window of seven days or less.
 > **Hint:** A month in the console and seven days in the CLI are different datasets.
 > Match time, category, severity, and status before comparing counts.
 
-### Step 5: Find collection that needs attention
+### Step 4: Find collection that needs attention
 
 Use a short summary to find where you need a closer look.
 

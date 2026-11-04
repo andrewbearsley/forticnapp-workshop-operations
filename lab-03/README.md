@@ -67,7 +67,6 @@ Check its actor, time, and outcome. Keep it separate from your incident if no li
 
 ## Discussion
 
-Which source supports the statement "this identity performed this action"?
 Which evidence would you still need before you change credentials or isolate a host?
 
 ---

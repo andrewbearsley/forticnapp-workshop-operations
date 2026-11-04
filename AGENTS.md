@@ -16,6 +16,10 @@ Keep one main teaching point per lab in instructor-guide.md.
 Make the concepts, tasks, and discussion reinforce that point. Do not repeat it as a new section in every lab.
 Put delivery planning, credential administration, and build instructions in instructor-guide.md.
 Remove explanations that repeat the interface or a previous instruction.
+Do not repeat change restrictions in student instructions for the read-only demo tenant.
+Keep change boundaries explicit for exercises in the writable sandpit.
+Keep filter resets and recovery actions conditional on the problem they solve.
+Check a saved result once. Repeat a check only when an intervening action could change it.
 
 Write procedures against the live console. Record untested steps in internal/validation.md.
 Keep original screenshots and tenant exports outside the tracked files.

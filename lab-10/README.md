@@ -18,7 +18,6 @@ If you change a CIS framework, present the result as a custom control set.
 
 Complete Lab 7.
 Use the AWS CIS framework that you examined in Lab 7.
-Screenshots show the demo tenant. Save only in the sandpit.
 
 ## Lab steps
 
@@ -81,8 +80,7 @@ Replace `YOURID` in the name below. Record the saved framework's ID in your work
 12. Click **Update section**.
 13. Save your custom framework.
 
-**Checkpoint:** Your framework appears under **Managed by you**.
-Reopen its edited section. The omitted policy is absent. The source framework is unchanged.
+**Checkpoint:** Your framework appears under **Managed by you**. The source framework is unchanged.
 
 > **What matters:** A modified CIS-based framework is a custom control set.
 > Do not present it as the complete, unchanged CIS benchmark.
@@ -90,9 +88,9 @@ Reopen its edited section. The omitted policy is absent. The source framework is
 ### Step 3: Review revision and evaluation state
 
 1. Reopen your framework.
-2. Record its revision and policy selection.
-3. Check for **Pending changes**.
-4. Explain which assessment results may still reflect the earlier configuration.
+2. Check that the omitted policy is absent from the edited section.
+3. Read its revision.
+4. Check for **Pending changes**.
 
 **Checkpoint:** Could you use the current assessment results to report on your changed framework yet?
 Use its revision and pending state to explain what is ready and what still needs evaluation.

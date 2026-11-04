@@ -33,7 +33,6 @@ Another analyst is taking over. Give them enough evidence to act without repeati
 
 **Checkpoint:** Your listener can explain what happened, what remains uncertain, and what to do next.
 They can trace the main conclusion to its evidence.
-Do not change the demo alert's status or comments.
 
 **Extension:** Investigate **Potentially Compromised AWS Credentials** if available.
 Apply the same method to identities, API activity, and related resources.

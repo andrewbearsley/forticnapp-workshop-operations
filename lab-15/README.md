@@ -60,7 +60,6 @@ Invoke `$forticnapp-lacework` in Codex. Supply this task with your chosen ID and
 ```text
 Use profile fortidemo-2026-04-readonly-use, account partner-demo,
 and subaccount fortidemo-2026-04.
-Use read operations only. Do not change any tenant state.
 Investigate composite alert REPLACE_ID for REPLACE_PERIOD.
 Confirm the tenant before requesting data.
 Summarise observations, entities, and the activity sequence.
@@ -69,8 +68,7 @@ State the evidence sources and any incomplete checks.
 Reduce output before displaying it. Keep secrets and unrelated identifiers private.
 ```
 
-**Checkpoint:** Did the agent find the activity and entities you found?
-Check two important claims against the evidence. Follow up on any disagreement.
+**Checkpoint:** The answer concerns your chosen alert and its affected entities.
 
 ### Step 4: Check sandpit coverage
 
@@ -81,7 +79,6 @@ Use read operations only.
 Check cloud integration status and workload agent coverage.
 Report counts, stale collection, and failures.
 Distinguish data collection health from security findings.
-Do not change policies, alerts, integrations, or reports.
 ```
 
 **Checkpoint:** Would this answer help you decide where collection needs attention?
@@ -89,6 +86,7 @@ Check that it distinguishes an unhealthy integration from a request it could not
 
 ### Step 5: Decide what you can use
 
+Check two important claims against the console or API evidence.
 Ask the agent which source supports its main conclusion.
 Compare the requested time period with the period it actually queried.
 Check whether it handled all required pages.

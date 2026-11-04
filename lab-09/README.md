@@ -16,7 +16,6 @@ Test the query first. A disabled policy lets you review the result and configura
 ## Prerequisites
 
 Complete Lab 8.
-Screenshots show demo forms. Save objects only in the sandpit.
 
 ## Lab steps
 

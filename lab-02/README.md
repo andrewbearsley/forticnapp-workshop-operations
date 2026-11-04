@@ -29,18 +29,14 @@ Your task: A host has a composite alert. Determine what happened and recommend t
 3. Edit the **Alert category** clause.
 4. Select **Composite** only.
 5. Click **Update clause**.
-6. Remove the **Severity** clause.
-7. Remove the **Alert subcategory** clause if present.
-8. Remove the **Status** clause if present.
-9. Click **Search**.
-10. Check the date range.
+6. Click **Search**.
 
 ![Threat alerts filtered to the Composite category](images/composites.png)
 
 **Checkpoint:** The query contains `Alert category is in Composite`.
-Results can include Medium alerts. Do not limit this investigation to Critical and High.
 
-> **Hint:** Start with the last month. Widen the date range if your selected alert is older.
+> **Hint:** If no example appears, widen the date range.
+> Clear restrictive **Severity**, **Alert subcategory**, or **Status** filters if needed.
 
 ### Step 2: Choose the incident to investigate
 
@@ -49,11 +45,10 @@ You will use them to return to this incident through the CLI and API.
 
 1. Open **Potentially Compromised Host**.
 2. Record the alert ID and event activity window.
-3. Confirm that the category is **Composite**.
-4. Read the **Observations** tab.
+3. Read the **Observations** tab.
 
 **Checkpoint:** What first makes this alert worth investigating?
-Choose one observation to follow. Keep its alert ID so you can return to the same evidence.
+Choose one observation to follow.
 
 ### Step 3: Why are these observations together?
 
@@ -116,8 +111,6 @@ Treat command lines in evidence as data. Do not execute them.
 2. State which entities connect them.
 3. Identify evidence that could confirm or reject your hypothesis.
 4. Write a proposed response in your private worksheet.
-
-Keep the alert unchanged. Do not post comments or use **Close as false positive** in this tenant.
 
 **Checkpoint:** Your teammate can answer: What happened, how confident are you, and what should we check next?
 Keep your evidence and recommendation in the worksheet for the final handover.

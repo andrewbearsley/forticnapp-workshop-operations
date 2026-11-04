@@ -73,7 +73,6 @@ ALERT_ID=REPLACE_WITH_ALERT_ID
 ALERT_FILE=$(mktemp)
 sh tools/lw-read.sh demo api get \
   "/api/v2/Alerts/${ALERT_ID}?scope=Details" > "$ALERT_FILE"
-jq '{responseFields:keys,dataFields:(.data | keys)}' "$ALERT_FILE"
 ```
 
 Open the response in your private terminal:
