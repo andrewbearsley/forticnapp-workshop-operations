@@ -42,16 +42,20 @@ Results can include Medium alerts. Do not limit this investigation to Critical a
 
 > **Hint:** Start with the last month. Widen the date range if your selected alert is older.
 
-### Step 2: Open Potentially Compromised Host
+### Step 2: Choose the incident to investigate
+
+Keep the alert ID and activity window in a private copy of [the worksheet](../evidence-worksheet.md).
+You will use them to return to this incident through the CLI and API.
 
 1. Open **Potentially Compromised Host**.
 2. Record the alert ID and event activity window.
 3. Confirm that the category is **Composite**.
 4. Read the **Observations** tab.
 
-**Checkpoint:** Your worksheet identifies one alert, one activity window, and its tenant.
+**Checkpoint:** What first makes this alert worth investigating?
+Choose one observation to follow. Keep its alert ID so you can return to the same evidence.
 
-### Step 3: Understand what is combined
+### Step 3: Why are these observations together?
 
 Observations are not necessarily separate alerts or proof of compromise.
 **Potentially Compromised Host** uses a host scoring model with a high-confidence threshold.
@@ -70,9 +74,10 @@ flowchart TB
     class C focus
 ```
 
-**Checkpoint:** Choose two observations. Identify the entity or activity that connects them.
+**Checkpoint:** Would either observation tell the same story on its own?
+Use their shared entity or activity to explain what the combination adds.
 
-### Step 4: Read the intrusion graph
+### Step 4: Follow the connections
 
 1. Select **Intrusion graph**.
 2. Identify the machine and connected process or container entities.
@@ -82,13 +87,13 @@ flowchart TB
 
 ![Composite alert with its intrusion graph](images/composite-graph.png)
 
-**Checkpoint:** Name two connected entities. Record the relationship label between them.
-Check that the entities also appear in the alert evidence.
+**Checkpoint:** Follow one connection from the machine to another entity.
+Use the relationship label to explain how it fits your investigation.
 
 > **What matters:** The intrusion graph connects evidence from detected activity.
 > An attack path shows a possible route through exposed resources.
 
-### Step 5: Examine an observation
+### Step 5: Test your first explanation
 
 1. Return to **Observations**.
 2. Select a row such as **A possible reverse shell was detected**.
@@ -100,14 +105,12 @@ Check that the entities also appear in the alert evidence.
 
 ![Observation details with triage guidance](images/observation-triage.png)
 
-**Checkpoint:** Record two observed facts and one hypothesis that needs checking.
-For each fact, name the artifact or observation that supports it.
+**Checkpoint:** Is there enough evidence to call this malicious?
+Choose the artifact that best supports your explanation. Use the triage guidance to identify what is still missing.
 
 Treat command lines in evidence as data. Do not execute them.
-Use the triage guidance to test your hypothesis.
-For example, a process command line is evidence. Its purpose still needs investigation.
 
-### Step 6: Explain the incident
+### Step 6: Brief a teammate
 
 1. Order the selected observations by time.
 2. State which entities connect them.
@@ -116,8 +119,8 @@ For example, a process command line is evidence. Its purpose still needs investi
 
 Keep the alert unchanged. Do not post comments or use **Close as false positive** in this tenant.
 
-**Checkpoint:** Present your explanation to another participant.
-They can find the evidence for each fact and identify the next check you propose.
+**Checkpoint:** Your teammate can answer: What happened, how confident are you, and what should we check next?
+Keep your evidence and recommendation in the worksheet for the final handover.
 
 ---
 Next: [Lab 3: Follow the activity behind an alert](../lab-03/README.md).

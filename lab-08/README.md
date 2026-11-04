@@ -32,11 +32,11 @@ Screenshots use the demo tenant. Review sandpit policies without changing them.
 
 ![Policy Catalog categories](images/policy-catalog.png)
 
-Use the policy review table in [your worksheet](../evidence-worksheet.md).
-Record one example and its available controls for each category.
-Mark categories unavailable to your role or tenant.
+Use the policy table in [your worksheet](../evidence-worksheet.md) if it helps you compare the controls.
+At the end, you will choose one policy and propose a useful change.
 
-**Checkpoint:** Your table has a row for each of the seven categories.
+**Checkpoint:** A team wants to review vulnerability criteria. Which category would you open?
+Where would you look for the definition behind your composite alert?
 
 ### Step 2: Review a compliance policy
 
@@ -45,7 +45,8 @@ Mark categories unavailable to your role or tenant.
 3. Read its assessed condition, severity, and remediation.
 4. Inspect the available editing controls without saving.
 
-**Checkpoint:** Record the condition that the policy checks and one available tuning control.
+**Checkpoint:** Would raising this policy's severity fix the resource configuration?
+Point to the condition that would still need remediation.
 
 ### Step 3: Compare vulnerability policies
 
@@ -53,32 +54,34 @@ Mark categories unavailable to your role or tenant.
 2. Select **Critical, fixable CVEs**.
 3. Read **Action on failure** and the container registry scope in **Details**.
 4. Open **Query**.
-5. Record the CVE count, severity, and fixability criteria.
+5. Identify which CVE count, severity, and fixability criteria would make an image fail.
 
 ![Build-time vulnerability policy criteria](images/build-policy-query.png)
 
 6. Open **Vuln Run time**.
 7. Select **New Security Vulnerability**.
 8. Compare its **Details** and **Query** tabs with the build-time policy.
-9. Record its **Frequency** and query conditions.
+9. Check how **Frequency** and query conditions differ from the build-time policy.
 
 ![Runtime vulnerability policy criteria](images/runtime-policy-query.png)
 
-**Checkpoint:** Name one criterion from each policy. Identify whether **Clone** is available for each.
+**Checkpoint:** A build fails because of vulnerable images. Which criteria would you review?
+Which policy would you examine for workloads already running? Check whether **Clone** is available before proposing a trial.
 
 ### Step 4: Review a Data policy
 
 1. Open **Data** if available.
 2. Select one policy.
 3. Identify its data security condition and affected assets.
-4. Record the available controls without changing them.
+4. Inspect the available controls without changing them.
 
 ![Data policy catalog](images/data-policies.png)
 
 Enabling a Data policy can initiate a rescan for configured DSPM integrations.
 Keep it unchanged during this review.
 
-**Checkpoint:** Your Data row identifies an assessed condition or records that the category is unavailable.
+**Checkpoint:** Which data asset or condition does this policy help you review?
+What could enabling it trigger? If the category is unavailable, continue to the next step.
 
 ### Step 5: Read a composite policy
 
@@ -92,8 +95,8 @@ Keep it unchanged during this review.
 
 The managed example has disabled Edit and Clone controls.
 
-**Checkpoint:** Connect the policy description to one observation from your Lab 2 alert.
-Record whether the editing controls are available in your tenant.
+**Checkpoint:** Your team wants to change this composite's behaviour. Are the controls here available for that change?
+Use the definition and the state of **Edit** and **Clone** to explain your answer.
 
 ### Step 6: Review an anomaly policy
 
@@ -105,7 +108,8 @@ Record whether the editing controls are available in your tenant.
 
 ![Anomaly policy query view](images/anomaly-query.png)
 
-**Checkpoint:** Your row records **No filter defined** for this example and the state of **Clone**.
+**Checkpoint:** Which changes does this policy actually let you make?
+Use **No filter defined** and the available controls to distinguish the definition from an editable query.
 
 ### Step 7: Read a threat observation definition
 
@@ -116,7 +120,8 @@ Record whether the editing controls are available in your tenant.
 
 ![Threat observation definition](images/threat-observation.png)
 
-**Checkpoint:** Record one triage check and whether the definition can be edited or cloned.
+**Checkpoint:** Could legitimate role activity explain this observation?
+Choose one triage check to perform before escalating it.
 
 ### Step 8: Inspect custom policy choices
 
@@ -132,11 +137,12 @@ LQL is the query language used in the advanced editor. QBL uses the guided query
 The LQL path offers Compliance and Violation. The QBL path fixes the policy type to Compliance.
 A new QBL policy creates a corresponding Risk Insight within about six hours.
 
-**Checkpoint:** Record the policy types available for each authoring path.
+**Checkpoint:** Your team needs a new configuration check. Which authoring path would you choose?
+Use its available policy types and editor to explain your choice.
 
 ### Step 9: Choose a tuning action
 
-Choose one policy from your table. Propose a change using the questions below.
+Choose one policy you examined. Propose a change that solves a specific problem. Use the questions below.
 
 | Action | Question to answer first |
 |---|---|
@@ -148,8 +154,8 @@ Choose one policy from your table. Propose a change using the questions below.
 
 > **What matters:** Choose a control that addresses the problem. Changing severity changes priority; it does not change which resources match.
 
-**Checkpoint:** Your proposal names an available control, its scope, and the expected result.
-Include one check for evidence that the change could hide.
+**Checkpoint:** Would your change solve the problem or just make useful evidence disappear?
+Explain the expected improvement and one check you would make before applying it.
 Keep existing policies unchanged. You will create your own policy in Lab 9.
 
 ---

@@ -57,7 +57,9 @@ lacework configure show subaccount --profile fortidemo-2026-04-readonly-use
 **Checkpoint:** The account is `partner-demo`. The subaccount is `fortidemo-2026-04`.
 Do not print the complete CLI configuration.
 
-### Step 4: Find composite alerts
+### Step 4: Find the same alerts without opening the console
+
+Build a summary you could repeat during a daily review.
 
 ```bash
 set -o pipefail
@@ -68,14 +70,17 @@ sh tools/lw-read.sh demo alert list --start -7d --end now \
         severities:([.[].severity] | unique)})'
 ```
 
-**Checkpoint:** Compare the titles and period with the console.
+**Checkpoint:** Do the CLI and console tell the same story for this period?
+Compare the composite titles and counts after matching the console filters.
 If the selected alert is older, use the same historical period in both tools.
 Each alert-list request must use a window of seven days or less.
 
 > **Hint:** A month in the console and seven days in the CLI are different datasets.
 > Match time, category, severity, and status before comparing counts.
 
-### Step 5: Summarise integration coverage
+### Step 5: Find collection that needs attention
+
+Use a short summary to find where you need a closer look.
 
 ```bash
 sh tools/lw-read.sh sandpit cloud-account list \
@@ -88,8 +93,8 @@ sh tools/lw-read.sh sandpit cloud-account list \
 Compare `enabled` and `healthy` for one integration type.
 Use **Settings > Cloud accounts** to check the state of its integrations.
 
-**Checkpoint:** Record the two counts and one integration state from the console.
-Use that state to explain whether enabled collection is healthy.
+**Checkpoint:** Does "enabled" mean the integration is collecting successfully?
+Use one integration's console state to check what the two CLI counts tell you.
 
 The wrapper accepts selected read commands and fixes the tenant flags.
 

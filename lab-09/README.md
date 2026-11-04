@@ -20,7 +20,9 @@ Screenshots show demo forms. Save objects only in the sandpit.
 
 ## Lab steps
 
-### Step 1: Build a QBL query
+### Step 1: Make the exposed-host question reusable
+
+In Lab 4, you searched for internet-exposed hosts. Build that query in the sandpit so you can save it for another review.
 
 1. Confirm **FORTINETAPACDEMO**.
 2. Open **Policy Manager > Queries**.
@@ -34,15 +36,15 @@ Screenshots show demo forms. Save objects only in the sandpit.
 
 ![Explorer query builder](images/query-builder.png)
 
-**Checkpoint:** Your query contains **Internet Exposed = True**.
-Open one returned resource and identify the exposure relationship in its graph.
+**Checkpoint:** Would this result help you choose hosts for an exposure review?
+Open a returned host's graph and check why it matches.
 If the result is empty, inspect data coverage before concluding that no exposure exists.
 
 ### Step 2: Save the query
 
 Choose a unique participant ID, such as `ab04`.
 Replace `YOURID` in workshop names with this ID. For example: `Workshop-ab04-exposed-hosts`.
-Record each saved object's name and ID under **Created objects** in [your worksheet](../evidence-worksheet.md).
+Record each saved object's name and ID under **Created objects** in [your worksheet](../evidence-worksheet.md) for cleanup in Lab 16.
 Use the same participant ID in later labs.
 
 1. Click **Save as Query/Insight**.
@@ -52,8 +54,8 @@ Use the same participant ID in later labs.
 5. Click **Save Query Only**.
 6. Find the query in **Policy Manager > Queries**.
 
-**Checkpoint:** Your saved query has a unique name and recorded ID.
-Saving a query does not by itself enable a detection policy.
+**Checkpoint:** Your query is available in the catalog for another review.
+Saving it has not enabled a detection policy.
 
 ### Step 3: Prepare the sandpit CLI profile
 
@@ -91,6 +93,7 @@ Your task is to find EC2 instances that do not require IMDSv2 tokens.
 Test the condition before saving a disabled policy.
 
 The example finds EC2 configuration where `MetadataOptions.HttpTokens` is not `required`.
+Before running it, predict which value would match: `optional` or `required`.
 It checks one IMDSv2 setting, not a complete CIS control.
 
 From the repository root, run:
@@ -104,8 +107,8 @@ lacework query run -f examples/ec2-imdsv2.json \
   | jq '{sampleRows:length,fields:((.[0] // {}) | keys)}'
 ```
 
-**Checkpoint:** The command succeeds. The result reports sample rows and their field names.
-The five-row limit gives a sample, not a tenant-wide count.
+**Checkpoint:** The command succeeds and reports the size of your sample.
+Could you use this five-row preview to claim how many affected instances exist?
 
 > **Hint:** The seven-day window can include older configuration snapshots.
 > If the result is empty, compare the window with the resource collection time in Explorer.
@@ -170,13 +173,13 @@ flowchart TB
     style configure fill:#F6F8FA,stroke:#D1D9E0,color:#10243B
 ```
 
-### Step 6: Review a tuning change
+### Step 6: Make the policy useful to another analyst
 
-Open your own policy. Change its description or severity using the available editor.
+Open your own policy. Improve its description or choose a severity that you can justify.
 Keep it disabled. Read the saved value back.
 
-**Checkpoint:** Read the edited field back from your policy. It matches your change.
-The policy remains disabled.
+**Checkpoint:** The saved field matches your change and the policy remains disabled.
+Could another analyst understand what to review from this policy's description?
 
 Do not enable the policy during this exercise. Activation requires a separate scope and routing review.
 Remove both queries and the policy in Lab 16.

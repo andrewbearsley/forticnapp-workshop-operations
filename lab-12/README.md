@@ -20,7 +20,9 @@ Complete Lab 11. Do not change shared integrations or channels.
 
 ## Lab steps
 
-### Step 1: Check collection
+### Step 1: Would missing data change your conclusion?
+
+A quiet alert list can look reassuring. Check whether the relevant data is arriving before relying on it.
 
 1. Open **Settings > Cloud accounts**.
 2. Inspect the configuration integration for an AWS or Azure scope.
@@ -33,12 +35,10 @@ Complete Lab 11. Do not change shared integrations or channels.
 
 ![Agent coverage and inventory](images/agent-coverage.png)
 
-Check collection state in the sandpit.
+**Checkpoint:** Is the collection current enough to support your investigation window?
+Use its state and last successful update to decide. An enabled integration alone is not enough.
 
-**Checkpoint:** Record one collection source and its latest successful update.
-An enabled integration and a healthy collection state are different checks.
-
-### Step 2: Review routing
+### Step 2: Would anyone receive the alert?
 
 1. Open **Settings > Channels**.
 2. Inspect a channel without changing its recipients.
@@ -46,19 +46,20 @@ An enabled integration and a healthy collection state are different checks.
 4. Trace the intended route for a composite alert.
 5. Compare that route with the email channel in your report configuration.
 
-**Checkpoint:** Record one policy, the alert route you inspected, and the report email channel.
-Label which defines the condition, routes the alert, and delivers the report.
+**Checkpoint:** If this composite alert needed action, which team would receive it?
+Trace the route you inspected. Check report delivery separately.
 
 > **What matters:** Check that alert notifications reach the responsible team.
 
-### Step 3: Record an operational issue
+### Step 3: Hand over the next action
 
 Write a short handover for one failed or stale collection.
 If none is present, use a healthy collection as a status update.
 Include the integration type, time, observed state, and next check.
 Keep credentials and unrelated identifiers out of the handover.
 
-**Checkpoint:** Your handover reports the observed issue without claiming an unverified cause.
+**Checkpoint:** A teammate can see what is working or missing and which check to perform next.
+They do not need to repeat your investigation to understand the handover.
 
 ---
 Next: [Lab 13: Ask the same questions through the CLI](../lab-13/README.md).

@@ -21,6 +21,9 @@ Close unrelated notices before captures. Redact identifiers and credentials.
 Use magenta callouts for controls. Keep evidence screenshots clear of callouts.
 Add an observable checkpoint after each important step.
 State what evidence students must find to check an answer.
+Tie tasks and checkpoints to a useful decision or an observable result.
+Do not ask students to copy counts or fill tables without a later use for that evidence.
+Keep mechanical success checks for setup, saved configuration, and cleanup.
 Use brief hints for practical help. Use What matters callouts for key lessons.
 Teach command setup before the first command that needs it.
 Introduce credentials, tools, participant IDs, and worksheets at their first use in a lab.

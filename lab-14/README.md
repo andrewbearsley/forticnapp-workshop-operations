@@ -21,7 +21,10 @@ Use the [API endpoint documentation](https://api.lacework.net/api/v2/docs) for r
 
 ## Lab steps
 
-### Step 1: Identify the request parts
+### Step 1: Follow the request to the evidence
+
+You want a script to retrieve the same evidence you examined in the console.
+The diagram shows where scope, authentication, and response checks fit.
 
 ```mermaid
 flowchart TB
@@ -57,12 +60,13 @@ sh tools/lw-read.sh sandpit api get /api/v2/CloudAccounts \
 Compare the shape with `cloud-account list` from Lab 13.
 The native list command returns an array. This REST response wraps rows in `data`.
 
-**Checkpoint:** The API summary reports `responseFields` and `returnedRows`.
-Identify `data` in the response fields. That is where this response stores its rows.
+**Checkpoint:** You can locate the returned rows under `data`.
+A script must use that response structure to count rows correctly.
 
-### Step 3: Retrieve one alert
+### Step 3: Check your incident evidence through the API
 
-Set the ID from your own investigation:
+Retrieve the alert from Lab 2. You will check whether the API supports the same conclusion as the console.
+Set the ID from that investigation:
 
 ```bash
 ALERT_ID=REPLACE_WITH_ALERT_ID
@@ -81,12 +85,12 @@ jq '.data' "$ALERT_FILE" | less
 In `less`, type `/` followed by an entity value from Lab 2. Press Enter to search.
 Use `n` for the next match. Press `q` to return to the shell.
 
-1. Find an entity or activity value that also appears in the console.
-2. Record the JSON field name and its matching console value in your private worksheet.
-3. Repeat for a second value. Record any evidence you could not find.
+1. Choose an entity or activity value that supports your incident explanation.
+2. Find the matching value in the API response.
+3. Check a second value before relying on the response in an automated investigation.
 
-**Checkpoint:** Two console values match the API evidence, or your worksheet identifies the missing evidence.
-Field names alone are not evidence of the incident.
+**Checkpoint:** Does this response support your console explanation?
+Point to the matching values. Identify any missing evidence that would limit an automated conclusion.
 
 Alert details can contain identities, addresses, and command lines. Keep the file private.
 Remove it after the comparison:
@@ -95,7 +99,7 @@ Remove it after the comparison:
 rm -f "$ALERT_FILE"
 ```
 
-### Step 4: Understand search requests
+### Step 4: Search for a period of activity
 
 A search endpoint can use `POST` without changing tenant configuration.
 Check the endpoint documentation to determine its effect.
@@ -120,10 +124,12 @@ rm -f "$REQUEST_FILE"
 
 Check `timeFilter` before you run the request. It selects the last 24 hours.
 
-**Checkpoint:** The result reports `returnedRows` and `hasMore`.
-Find the endpoint description that confirms this operation searches alerts.
+**Checkpoint:** The result shows `returnedRows` and `hasMore` for the requested period.
+The endpoint documentation confirms that this POST searches alerts; it does not create them.
 
-### Step 5: Check completeness
+### Step 5: Could you trust the total?
+
+You want to report how many alerts matched. Check whether the response is the whole result or just one page.
 
 1. Inspect the endpoint's response schema.
 2. Check for paging metadata and a next-page link.
@@ -131,8 +137,8 @@ Find the endpoint description that confirms this operation searches alerts.
 4. Record the time window and filters with the result.
 5. Preserve request failures as failures.
 
-**Checkpoint:** Record your time window, filters, and `hasMore` value.
-If another page exists, your current row count is incomplete. A request error is an incomplete check.
+**Checkpoint:** Would you publish this count as a complete total?
+Use the time window, filters, and paging state to justify your answer. A failed request cannot establish a count.
 
 > **What matters:** An empty result, a failed request, and a first page are different outcomes.
 > Do not turn any of them into an unsupported claim about tenant security.

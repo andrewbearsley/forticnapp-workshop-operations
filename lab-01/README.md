@@ -31,24 +31,23 @@ Sign in to [the console](https://partner-demo.lacework.net/) with your workshop 
 
 **Checkpoint:** The tenant selector reads `FORTIDEMO-2026-04`.
 
-### Step 2: Read the overview
+### Step 2: Choose where to start
 
-Keep your answers in a private copy of [the evidence worksheet](../evidence-worksheet.md).
+You have just opened the console. Is there activity to investigate, a configuration to fix, or an exposed host to patch?
 
-1. Find **Threat alert overview**.
-2. Find **Non-compliant resources**.
-3. Find **Exposed Fixable Hosts**.
-4. Record the last update time for one widget.
+1. Look at **Threat alert overview** for detected activity.
+2. Compare it with **Non-compliant resources** for configuration problems.
+3. Find **Exposed Fixable Hosts** for reachable hosts with available fixes.
 
 ![Dashboard with threat, compliance, and exposure widgets](images/dashboard.png)
 
-**Checkpoint:** Record one count from each widget. Label it as activity, compliance, or exposure.
-Record the update time that you found.
+**Checkpoint:** A teammate asks where to start with suspicious activity. Which widget would you choose?
+Would you choose the same one to plan patching?
 
-For example, **Non-compliant resources** counts resources that fail an assessment.
-It does not count incidents. One resource can appear in several views.
+**Non-compliant resources** counts resources that fail an assessment. It does not count incidents.
+The useful question is what each count helps you decide.
 
-### Step 3: Find the work areas
+### Step 3: Find the view that answers your question
 
 | Area | Use it to answer |
 |---|---|
@@ -59,9 +58,11 @@ It does not count incidents. One resource can appear in several views.
 | Reports | What evidence should be delivered, and to whom? |
 | Inventory and Coverage | What exists, and what data is being collected? |
 
-Locate each area in the navigation. Open **Threat Center > Alerts** for the next lab.
+Use the table to locate the area you would open for an investigation.
+Then open **Threat Center > Alerts** for the next lab.
 
-**Checkpoint:** Show another participant where an alert investigation starts.
+**Checkpoint:** You know where to investigate activity and where to examine exposure.
+The next lab starts with a host that may be compromised.
 
 ## Discussion
 

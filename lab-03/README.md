@@ -19,31 +19,31 @@ Complete Lab 2. Keep the composite alert's activity window in your worksheet.
 
 ## Lab steps
 
-### Step 1: Inspect a policy alert
+### Step 1: What triggered this alert?
 
 1. Open **Threat Center > Alerts**.
 2. Change **Alert category** to **Policy**.
 3. Start with the activity window from Lab 2.
 4. Open an available alert.
 5. Read its description and source.
-6. Record its activity window, affected entity, and policy.
+6. Identify the condition that triggered it and the affected entity.
 
 If no example appears, widen the date range. Record the new window separately from your composite investigation.
 
-**Checkpoint:** Record the triggering condition and its affected entity.
-Use the description to check your answer.
+**Checkpoint:** What would have to change for this condition to stop matching?
+Use the policy description to support your answer.
 
-### Step 2: Inspect an anomaly
+### Step 2: Could this be normal?
 
 1. Change **Alert category** to **Anomaly**.
 2. Open an available example.
-3. Record what is unusual and which entity is involved.
-4. List the operational context needed to explain it.
+3. Find what is unusual and which entity is involved.
+4. Consider what legitimate work could produce the same activity.
 
-**Checkpoint:** Give one legitimate explanation and one security explanation.
-Name one check that would help distinguish them.
+**Checkpoint:** Would you escalate this now or check with the resource owner first?
+Name the evidence that would help you decide.
 
-### Step 3: Examine cloud activity
+### Step 3: Check who did what
 
 Use your selected alert if it describes a cloud API action.
 If it concerns host activity, use a separate cloud activity example.
@@ -59,8 +59,8 @@ Record a separate example as separate evidence. Do not infer a connection to the
 
 ![Cloud Activity investigation view](images/cloud-activity.png)
 
-**Checkpoint:** Record one cloud action, its actor, time, and available outcome.
-State whether it matches your alert or is a separate example.
+**Checkpoint:** Could you use this record to support the statement "this identity performed this action"?
+Check its actor, time, and outcome. Keep it separate from your incident if no link is established.
 
 > **Hint:** A host process event and a cloud API event have different sources.
 > Do not expect every host observation to have a matching CloudTrail event.

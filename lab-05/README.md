@@ -21,16 +21,17 @@ Your task is to propose one change that would interrupt an exposure path.
 
 ## Lab steps
 
-### Step 1: Compare the two alert views
+### Step 1: Is this activity or an exposure condition?
 
 1. Open **Risk Center > Alerts**.
 2. Open an available risk alert.
 3. Identify the resource and condition.
 4. Compare its question with the composite alert from Lab 2.
 
-**Checkpoint:** Record the activity described by your threat alert and the condition described by your risk alert.
+**Checkpoint:** Which alert helps explain what happened? Which helps explain what could happen?
+Use the condition or activity in each description to decide.
 
-### Step 2: Find the top work items
+### Step 2: Choose your first work item
 
 1. Open **Risk Center > Findings > Attack Path**.
 2. Select **Top Work Items**.
@@ -40,9 +41,10 @@ Your task is to propose one change that would interrupt an exposure path.
 
 ![Attack Path top work items](images/attack-work-items.png)
 
-**Checkpoint:** Name your first work item. Cite one exposure condition and one possible impact from its details.
+**Checkpoint:** If you could investigate only one item next, which would you choose?
+Use its exposure and possible impact to justify the choice.
 
-### Step 3: Trace an exposure path
+### Step 3: Follow the path to the target
 
 1. Select **Path Investigation**.
 2. Look for a path involving your incident host. If none appears, select an AWS or Azure exposure example.
@@ -52,7 +54,8 @@ Your task is to propose one change that would interrupt an exposure path.
 
 ![Path Investigation with exposure relationships](images/path-investigation.png)
 
-**Checkpoint:** Name an entry point, a target, and one relationship that permits the path.
+**Checkpoint:** Follow the route as an attacker could use it.
+Where could they enter, what could they reach, and which relationship permits the next step?
 
 ```mermaid
 flowchart LR
@@ -67,14 +70,15 @@ flowchart LR
 
 Example exposure path.
 
-### Step 4: Propose a path interruption
+### Step 4: Propose a way to break the path
 
 1. Select one relationship that you could change.
 2. Explain how that change removes or reduces exposure.
 3. Identify the service owner who must assess the operational effect.
 4. Record how you would verify the change.
 
-**Checkpoint:** Name the relationship to change, the exposure it removes, and the service check needed before the change.
+**Checkpoint:** Would your proposed change interrupt the path?
+Show the relationship it removes and explain what the service owner must check before making it.
 
 Do not change cloud resources during this lab.
 

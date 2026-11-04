@@ -22,7 +22,9 @@ Screenshots show the demo tenant. Save only in the sandpit.
 
 ## Lab steps
 
-### Step 1: Inspect the framework catalog
+### Step 1: Find how controls fit together
+
+Your review needs a selected set of controls. Find how a framework organises them before you change the selection.
 
 1. Confirm **FORTINETAPACDEMO**.
 2. Open **Policy Manager > Frameworks**.
@@ -32,8 +34,8 @@ Screenshots show the demo tenant. Save only in the sandpit.
 
 ![Framework Catalog](images/framework-catalog.png)
 
-**Checkpoint:** Name one section and a policy mapped to it.
-The policy defines the check. The framework groups that check with others.
+**Checkpoint:** You can follow a framework section to the policies it includes.
+Those mappings determine which checks belong in your review.
 
 ```mermaid
 flowchart TB
@@ -57,7 +59,10 @@ flowchart TB
 
 Compliance reporting workflow.
 
-### Step 2: Create a custom framework
+### Step 2: Shape the framework for your review
+
+Choose a review purpose narrower than the full CIS benchmark.
+You will remove one policy that falls outside that purpose.
 
 Use your participant ID from Lab 9. If you skipped that lab, choose a unique ID such as `ab04`.
 Replace `YOURID` in the name below. Record the saved framework's ID in your worksheet.
@@ -71,7 +76,7 @@ Replace `YOURID` in the name below. Record the saved framework's ID in your work
 7. Click **Add / Edit policies**.
 8. Select **Selected policies**.
 9. Choose one policy to omit from your custom review.
-10. Record why it is outside your review scope.
+10. Explain why it is outside your review scope.
 11. Clear that policy.
 12. Click **Update section**.
 13. Save your custom framework.
@@ -89,7 +94,8 @@ Reopen its edited section. The omitted policy is absent. The source framework is
 3. Check for **Pending changes**.
 4. Explain which assessment results may still reflect the earlier configuration.
 
-**Checkpoint:** Your worksheet records the framework name, provider, revision, and reporting purpose.
+**Checkpoint:** Could you use the current assessment results to report on your changed framework yet?
+Use its revision and pending state to explain what is ready and what still needs evaluation.
 
 Framework changes can take up to 24 hours to appear in assessment results.
 Continue with the existing assessment while the changes are evaluated.

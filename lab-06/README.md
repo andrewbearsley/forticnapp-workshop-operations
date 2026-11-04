@@ -19,7 +19,7 @@ Complete Lab 5. Keep one attack path resource in your worksheet.
 
 ## Lab steps
 
-### Step 1: Examine an identity
+### Step 1: Check what an identity can do
 
 1. Open **Risk Center > Findings > Identities**.
 2. Open **Top Identity Risks**.
@@ -27,13 +27,13 @@ Complete Lab 5. Keep one attack path resource in your worksheet.
 4. Read its risks and available usage information.
 5. Compare its permissions with the work it needs to perform.
 
-**Checkpoint:** Record one permission risk and its usage evidence.
-State what you would ask the identity owner before changing access.
+**Checkpoint:** Which permission would you ask the owner to review first?
+Use the risk and usage information to explain the request.
 
 > **What matters:** An old or unused identity still needs an owner check.
 > Usage history alone does not prove that removing access is safe.
 
-### Step 2: Examine a vulnerability
+### Step 2: Choose a package to fix first
 
 1. Open **Risk Center > Findings > Vulnerabilities**.
 2. Open **Top items**.
@@ -46,17 +46,18 @@ State what you would ask the identity owner before changing access.
 
 The screenshot shows the Overview tab. Use Top items for the package comparison in this exercise.
 
-**Checkpoint:** Record the package, affected resource, and available fix.
-Use the exposure details to justify its place in your work list.
+**Checkpoint:** Would you start with the most widespread vulnerability or a fixable package on an exposed host?
+Use the findings you opened to explain your priority.
 
-### Step 3: Find the earlier control point
+### Step 3: Could you have caught this before deployment?
 
 1. Open **Findings > Code Security > Infrastructure (IaC)**.
 2. Examine an available assessment.
 3. Open **Applications**.
 4. Compare a dependency finding with a runtime vulnerability finding.
 
-**Checkpoint:** Identify which evidence concerns source code and which evidence concerns a running workload.
+**Checkpoint:** Which finding could a developer act on before deployment?
+Which needs a check of the running workload?
 
 For code scanning exercises, use the [AWS integration workshop](https://github.com/andrewbearsley/forticnapp-workshop-aws-automated).
 

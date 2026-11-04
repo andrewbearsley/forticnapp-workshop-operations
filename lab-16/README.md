@@ -20,7 +20,9 @@ Keep your evidence worksheet and the IDs of every object that you created.
 
 ## Lab steps
 
-### Step 1: Present the investigation
+### Step 1: Give the next analyst a useful handover
+
+Another analyst is taking over. Give them enough evidence to act without repeating all your work.
 
 1. Confirm **FORTIDEMO-2026-04**.
 2. Present the composite alert and its activity window.
@@ -29,7 +31,8 @@ Keep your evidence worksheet and the IDs of every object that you created.
 5. Separate confirmed facts from hypotheses.
 6. Propose a response and a verification method.
 
-**Checkpoint:** Another participant can trace each main conclusion to its evidence.
+**Checkpoint:** Your listener can explain what happened, what remains uncertain, and what to do next.
+They can trace the main conclusion to its evidence.
 Do not change the demo alert's status or comments.
 
 **Extension:** Investigate **Potentially Compromised AWS Credentials** if available.
@@ -43,7 +46,7 @@ Apply the same method to identities, API activity, and related resources.
 4. Explain one failed control and one assessment gap.
 5. Show the scope of each sandpit report configuration.
 
-**Checkpoint:** Your explanation keeps incident evidence, exposure, and compliance assessment distinct.
+**Checkpoint:** Your listener knows which evidence supports an incident response, an exposure change, or a compliance follow-up.
 
 ### Step 3: Remove your report configurations
 

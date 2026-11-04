@@ -20,9 +20,10 @@ Complete Lab 1.
 
 ## Lab steps
 
-### Step 1: Read a framework result
+### Step 1: What does this assessment cover?
 
 Use the AWS and Azure scopes assigned for this lab.
+Keep the framework, version, scope, and time in your worksheet. They will guide your report settings in Lab 11.
 
 1. Open **Risk Center > Findings > Compliance > Cloud**.
 2. Select **Frameworks**.
@@ -33,11 +34,11 @@ Use the AWS and Azure scopes assigned for this lab.
 
 ![Cloud Compliance framework results](images/compliance-frameworks.png)
 
-**Checkpoint:** Your worksheet has one AWS row and one Azure row.
-Each row includes the framework title, version, scope, and assessment time.
+**Checkpoint:** A teammate asks for "the CIS score". Can you explain which environment and benchmark your answer covers?
+Check the provider, version, resource scope, and assessment time before quoting a result.
 If the demo tenant has no Azure result in the selected scope, use the sandpit for that comparison.
 
-### Step 2: Find a failed policy
+### Step 2: Find the resource behind a failed check
 
 1. Select **Policies**.
 2. Search for `permission to everyone`.
@@ -47,18 +48,18 @@ If the demo tenant has no Azure result in the selected scope, use the sandpit fo
 
 ![A compliance policy with its resource assessment](images/compliance-policy.png)
 
-**Checkpoint:** Record the failed resource and the policy condition.
-Use the resource assessment details to check that they match.
+**Checkpoint:** What would you ask the bucket owner to review?
+Use the policy condition and affected resource to make the request specific.
 
-### Step 3: Interpret assessment coverage
+### Step 3: Find what the score cannot tell you
 
 1. Return to **Frameworks**.
 2. Review fully assessed, partially assessed, manual, or unknown policy results that are present.
-3. Record one assessment limitation.
-4. Explain what evidence a manual control would need.
+3. Choose a control that needs more evidence.
+4. Decide what a reviewer would need to assess it.
 
-**Checkpoint:** Record one failed control and one assessment gap.
-State whether each needs remediation or more evidence.
+**Checkpoint:** Would a higher score settle this assessment gap?
+Explain what evidence is still needed before you can give a complete answer.
 
 > **What matters:** A passing automated assessment does not establish complete CIS certification.
 > Check manual controls, exclusions, coverage, and the exact framework version.
